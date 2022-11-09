@@ -1,6 +1,64 @@
 body {
-    background-image: url('images/backgroundimagethree.jpg'); 
+    background-image: url('images/backgroundimagethree.jpg'); /*set up background*/
     background-repeat : no-repeat;
     background-size: cover;
-    background-position: center center;
-  }/*set up background*/
+    text-align: center;
+}
+
+    .button1 {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      color: rgb(0, 0, 0);
+      padding: 22px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 300px;
+      position: absolute;
+      top: 61%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }/*New User set up*/
+
+    .button2 {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      color: rgb(0, 0, 0);
+      padding: 22px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 300px;
+      position: absolute;
+      top: 73%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    } /*Old User set up*/
+    
+    .button3 {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      color: rgb(0, 0, 0);
+      padding: 22px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 300px;
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    } /*About set up*/
+
+
+  
+
