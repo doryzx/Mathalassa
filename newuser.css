@@ -1,0 +1,37 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    font-size: 80px;
+    position:absolute;
+    width:100%;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+h3{
+    font-size:30px;
+    text-align: center;
+}
+.fish1{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    top: 60%;
+    right:20%;
+}
+.fish2{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    top: 60%;
+}
+.fish3{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    top:60%;
+    left:20%;
+}
