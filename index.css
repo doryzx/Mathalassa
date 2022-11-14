@@ -29,7 +29,7 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
-.button1 {
+.button1 {/*New User set up*/
     background-color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -45,9 +45,9 @@ h3 {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    }/*New User set up*/
+    }
 
-    .button2 {
+    .button2 {/*Old User set up*/ 
       background-color: #ffffff;
       border: none;
       border-radius: 8px;
@@ -63,9 +63,9 @@ h3 {
       left: 50%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-    } /*Old User set up*/
+    } 
     
-    .button3 {
+    .button3 {/*About set up*/
       background-color: #ffffff;
       border: none;
       border-radius: 8px;
@@ -81,7 +81,7 @@ h3 {
       left: 50%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-    } /*About set up*/
+    } 
 
 
 
