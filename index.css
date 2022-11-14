@@ -4,6 +4,57 @@ body {
     background-size: cover;
   }
 
+.popup {/*About button*/
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  padding: 22px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 300px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 500px;
+  height: 300px;
+  background-color: rgb(137, 27, 27);
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 0;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -75%);
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(212, 204, 204) transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+}
+
 h1{
   position: absolute;
   left:50%;
@@ -60,24 +111,6 @@ h3 {
       width: 300px;
       position: absolute;
       top: 73%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    } 
-    
-    .button3 {/*About set up*/
-      background-color: #ffffff;
-      border: none;
-      border-radius: 8px;
-      color: rgb(0, 0, 0);
-      padding: 22px 32px;
-      text-align: center;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      width: 300px;
-      position: absolute;
-      top: 85%;
       left: 50%;
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
