@@ -4,7 +4,7 @@ body {
     background-size: cover;
   }
 
-.popup {/*About button*/
+.aboutPopup {/*About button*/
   background-color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -23,7 +23,7 @@ body {
 }
 
 /* The actual popup */
-.popuptext {
+.aboutPopupText {
   visibility: hidden;
   width: 500px;
   height: 300px;
@@ -38,26 +38,37 @@ body {
   transform: translate(-50%, -75%);
 }
 
-.popup .popuptext::after {
+.aboutPopup .aboutPopupText::after {
   position: absolute;
   top: 20%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: rgb(212, 204, 204) transparent transparent transparent;
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
 } 
 
-.popupclose{
+.aboutPopupInfo{
   color: rgb(0, 0, 0);
   position: absolute;
-  top: 2%;
-  left: 95%;
+  width:80%;
+  text-align: center;
+  top: 18%;
+  left: 10%;
+  font-size: 18px;
+}
+
+.aboutPopupClose{
+  color: rgb(255, 0, 0);
+  position: absolute;
+  top: 3%;
+  left: 93%;
+  font-size: 30px;
 }
 
 
 /* Toggle this class - hide and show the popup */
-.popup .show {
+.aboutPopup .show {
   visibility: visible;
 }
 
