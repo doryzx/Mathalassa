@@ -7,7 +7,7 @@ body {
 .popup {/*About button*/
   background-color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   color: rgb(0, 0, 0);
   padding: 22px 32px;
   text-align: center;
@@ -23,24 +23,22 @@ body {
 }
 
 /* The actual popup */
-.popup .popuptext {
+.popuptext {
   visibility: hidden;
   width: 500px;
   height: 300px;
-  background-color: rgb(137, 27, 27);
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border-radius: 4px;
-  padding: 8px 0;
+  padding: 35px;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -75%);
 }
 
-/* Popup arrow */
 .popup .popuptext::after {
-  content: "";
   position: absolute;
   top: 20%;
   left: 50%;
@@ -48,7 +46,15 @@ body {
   border-width: 5px;
   border-style: solid;
   border-color: rgb(212, 204, 204) transparent transparent transparent;
+} 
+
+.popupclose{
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 2%;
+  left: 95%;
 }
+
 
 /* Toggle this class - hide and show the popup */
 .popup .show {
@@ -80,10 +86,18 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
+h4 {
+  position:absolute; 
+  left:95%;
+  top: 93%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 .button1 {/*New User set up*/
     background-color: #ffffff;
     border: none;
-    border-radius: 8px;
+    border-radius: 4px;
     color: rgb(0, 0, 0);
     padding: 22px 32px;
     text-align: center;
@@ -101,7 +115,7 @@ h3 {
     .button2 {/*Old User set up*/ 
       background-color: #ffffff;
       border: none;
-      border-radius: 8px;
+      border-radius: 4px;
       color: rgb(0, 0, 0);
       padding: 22px 32px;
       text-align: center;
