@@ -10,12 +10,12 @@ h1{
 }
 h2{
     font-size: 30px;
-    width:100%;
+    width:30%;
     top:57%;
 }
 p{
     font-size:20px;
-    width: 100%;
+    width: 30%;
     top:64%; 
 }
 img{
@@ -29,24 +29,29 @@ img{
 button{
     color:brown;
     background-color: aqua;
-    margin: 12.2%;
+    border-color: rgb(138, 136, 136);
+    margin-right: 21%;
     position: relative;
     margin-top: 10%;
-    left:7%;
+    left:16.5%;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
     
 }
 /*code for columnal spacing of text*/
 .fish1{
     position:absolute;
     text-align:center;
-    right:28%;
+    right:64%;
 }
 .fish2{
     position:absolute;
     text-align: center;
+    left: 35%;
 }
 .fish3{
     position:absolute;
     text-align: center;
-    left:29%;
+    left:64%;
 }
