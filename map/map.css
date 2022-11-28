@@ -1,11 +1,14 @@
-html { 
-    background: url(../images/tempMap.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+/* html { 
+    /* background: url(../images/tempMap.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover; */
+    /* -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-  }
+    background-size: cover; 
+}*/
 img{
-    width:200px;
-    height:200px;
+    width:75%;
+    position:absolute;
+    left:12%;
+    top:3%;
+    
 }
