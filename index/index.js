@@ -1,7 +1,23 @@
 function theFunctionAbout() {
     var popup = document.getElementById("thePopupAbout");
-    popup.classList.toggle("show");
+    popup.classList.add("show");
+    
   }
 
-//The popup does not necessarily needs a "close button", an easier solution is just simply use the entities around the popup to close pop up
-//Or simply use the popup itself, with message below as "click again to close" or "skip", if that is a tutorial-type popup. 
+  function theFunctionAboutClose(){
+    var popup = document.getElementById("thePopupAbout");
+    popup.classList.remove("show");
+    // popup.classList.add("hide");
+  }
+
+  function theFunctionOld() {
+    var popupTwo = document.getElementById("thePopupOld");
+    popupTwo.classList.add("show");
+  }
+
+  function theFunctionOldClose(){
+    var popupTwo = document.getElementById("thePopupOld");
+    popupTwo.classList.remove("show");
+  }
+
+  

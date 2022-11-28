@@ -59,18 +59,122 @@ body {
 }
 
 .aboutPopupClose{
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: #ff0000;
   position: absolute;
   top: 3%;
   left: 93%;
-  font-size: 30px;
+  font-size: 18px;
 }
 
-
-/* Toggle this class - hide and show the popup */
 .aboutPopup .show {
   visibility: visible;
 }
+
+.aboutPopup .hide{
+  display:none;
+} 
+
+.oldUserPopup {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  padding: 22px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 300px;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.oldUserPopupText {
+  visibility: hidden;
+  width: 500px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+  padding: 35px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -75%);
+}
+
+.oldUserPopup .oldUserPopupText::after {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
+} 
+
+.oldUserPopupInfo{
+  color: rgb(0, 0, 0);
+  position: absolute;
+  width:80%;
+  text-align: center;
+  top: 18%;
+  left: 10%;
+  font-size: 18px;
+} 
+
+.oldUserPopupClose{
+  color: rgb(0, 0, 0);
+  background-color: #ff0000;
+  position: absolute;
+  top: 3%;
+  left: 93%;
+  font-size: 18px;
+}
+
+.oldUserPopup .show {
+  visibility: visible; 
+}
+
+.oldUserPopup .hide{
+  display: none;
+}
+
+.form-container{
+  background-color: white;
+  width: 300px;
+}
+
+input[type=text]{
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-size: 18px;
+  width: 225px;
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+input[type=submit]{
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  font-size: 18px;
+  width: 75px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 
 h1{
   position: absolute;
@@ -122,24 +226,6 @@ h4 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     }
-
-    .button2 {/*Old User set up*/ 
-      background-color: #ffffff;
-      border: none;
-      border-radius: 4px;
-      color: rgb(0, 0, 0);
-      padding: 22px 32px;
-      text-align: center;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      width: 300px;
-      position: absolute;
-      top: 73%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    } 
 
 
 

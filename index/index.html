@@ -10,31 +10,37 @@
 <body>
     <h2>Welcome To</h2> 
     <h1>MATHALASSA</h1> <!--placeholder for image-->
-    <h3>by Dory and Whatstomata</h3>
+    <h3>by Dory and GuardCells</h3>
     <h4>v1.1.2</h4>
 
     <button class="button1" type="button">New User</button> 
-    <button class="button2" type="button">Old User</button>
 
     <div class="aboutPopup" onclick="theFunctionAbout()">About
         <p class="aboutPopupText" id="thePopupAbout">
             <span class="aboutPopupInfo">
-            Mathalassa is a fun and educational math game that offers students from varying ages and grades to learn and perfect their math skills.
+                Mathalassa is a fun and educational math game that offers students from varying ages and grades to learn and perfect their math skills.
             </span>
-            <span class="aboutPopupClose">x</span>
-            <button>yo</button>
+
+            <button class="aboutPopupClose" onclick="theFunctionAboutClose()">x</button>
         </p>
     </div>
 
-   <!-- <button class="oldUserPopup" onclick="theFunctionOldUser()">About
-        <p class="oldUserPopupText" id="thePopupOldUser">
-            <span class="oldUserPopupInfo">
-            Mathalassa is a fun and educational math game that offers students from varying ages and grades to learn and perfect their math skills.
-            </span>
-            <span class="oldUserPopupClose">x</span>
-        </p>
-    </button> -->
+    <div class="oldUserPopup" onclick="theFunctionOld()">Old User 
+        <form class="oldUserPopupText" id="thePopupOld">
+            <label class="oldUserPopupInfo" for="name">Please Enter Your Username:</label>
 
+                <div class="form-grp">
+                    <input class="inputNameHere" type="text" name="username" id="user" required minlength="2" maxlength="15" size="10" >
+                </div>
+
+                <div class="form-grp">
+                    <input class="inputSubmit" type="Submit" name="login-btn" id="user">
+                </div>
+
+            <button class="oldUserPopupClose" onclick="theFunctionOldClose()">x</button>
+
+        </form>
+    </div>
 
     <script src="index.js"></script> <!--reference to JS document-->
 </body>
