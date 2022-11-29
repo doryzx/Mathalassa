@@ -1,23 +1,17 @@
 function theFunctionAbout() {
-    var popup = document.getElementById("thePopupAbout");
-    popup.classList.add("show");
+    document.getElementById("thePopupAbout").style.visibility="visible";
     
   }
 
   function theFunctionAboutClose(){
-    var popup = document.getElementById("thePopupAbout");
-    popup.classList.remove("show");
-    // popup.classList.add("hide");
+    document.getElementById("thePopupAbout").style.visibility="hidden";
   }
 
   function theFunctionOld() {
-    var popupTwo = document.getElementById("thePopupOld");
-    popupTwo.classList.add("show");
+    document.getElementById("thePopupOld").style.visibility="visible";
   }
 
   function theFunctionOldClose(){
-    var popupTwo = document.getElementById("thePopupOld");
-    popupTwo.classList.remove("show");
+    document.getElementById("thePopupOld").style.visibility="hidden";
   }
-
   

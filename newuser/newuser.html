@@ -11,9 +11,9 @@
     <h1>Select Your Fish!</h1>
 
     <!--fish images-->
-    <img src="../images/tempGuppy.jpg"  height="170px" width="170px">
+    <img src="../images/tempGuppy.jpg"  height="20%" width="20%">
     <img src="../images/tempDiscus.jpg"  height="170px" width="170px">
-    <img src="../images/tempBlueTang.jpg"  height="170px" width="170px">
+    <img src="../images/tempBlueTang.jpg"  height="20%" width="20%">
 
     <!--fish names-->
     <h2 class="fish1">Guppy</h2>
@@ -23,9 +23,24 @@
     <h2 class="fish3">Blue Tang</h2>
     <p class="fish3">Paracanthurus<br>hepatus</p>
 
-    <button>Select</button>
-    <button>Select</button>
-    <button>Select</button>
+    <button class="selectOne" onclick="selectFishFunctionOpen()">Select</button>
+    <button class="selectTwo" onclick="selectFishFunctionOpen()">Select</button>
+    <button class="selectThree" onclick="selectFishFunctionOpen()">Select</button>
+  
+    <form class="newUsername" id="newUsername">
+        <label class="selectFishUsername" for="username">Please Enter Your Username:</label>
+            <p class="selectFishUsernameInfo">Please remember it, this will be your login info</p>
+
+            <div class="form-grp">
+                <input class="selectUsernameHere" type="text" name="username" id="username" minlength="2" maxlength="15" size="10" >
+            </div>
+
+            <div class="form-username">
+                <input class="usernameSubmit" type="Submit" name="login-btn" id="user">
+            </div>
+
+        <button class="selectFishClose" onclick="selectFishFunctionClose()">x</button>
+    </form>
 
     <script src="newuser.js"></script> <!--reference to js file-->
 </body>

@@ -67,14 +67,6 @@ body {
   font-size: 18px;
 }
 
-.aboutPopup .show {
-  visibility: visible;
-}
-
-.aboutPopup .hide{
-  display:none;
-} 
-
 .oldUserPopup {
   background-color: #ffffff;
   border: none;
@@ -135,14 +127,6 @@ body {
   top: 3%;
   left: 93%;
   font-size: 18px;
-}
-
-.oldUserPopup .show {
-  visibility: visible; 
-}
-
-.oldUserPopup .hide{
-  display: none;
 }
 
 .form-container{
