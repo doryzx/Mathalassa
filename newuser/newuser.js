@@ -5,3 +5,5 @@ function selectFishFunctionOpen() {
   function selectFishFunctionClose(){
     document.getElementById("newUsername").style.visibility="hidden";
   }
+
+  

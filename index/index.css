@@ -32,7 +32,7 @@ body {
   border-radius: 4px;
   padding: 35px;
   position: absolute;
-  top: 10%;
+  top: 80%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -75%);
@@ -88,13 +88,13 @@ body {
 .oldUserPopupText {
   visibility: hidden;
   width: 500px;
-  height: 300px;
+  height: 325px;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   border-radius: 4px;
   padding: 35px;
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -75%);
