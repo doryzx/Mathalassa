@@ -6,9 +6,12 @@
     background-size: cover; 
 }*/
 img{
-    width:75%;
-    position:absolute;
-    left:12%;
-    top:3%;
     
+    width:100%;
+    position:absolute;
+    /* top:0%;*/
+    -ms-transform: translate(-50%, -50%);
+    left:50%;
+    /* top:50%; */
+    transform: translate(-50%, -50%);
 }
