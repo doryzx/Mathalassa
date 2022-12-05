@@ -14,4 +14,10 @@ function theFunctionAbout() {
   function theFunctionOldClose(){
     document.getElementById("thePopupOld").style.visibility="hidden";
   }
+
+  function getValue(){
+    event.preventDefault();
+    const listUsername = document.getElementById("user").value;
+    console.log(listUsername);
+  }
   
