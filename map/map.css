@@ -1,17 +1,14 @@
 
-img{
-    
+.map{
     height:100%;
     position:absolute;
-    /* top:0%;*/
-    
     left:50%;
     top:50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-.levelPreview{
+.levelPreview{  
     background-color: #ffffff;
     border: none;
     visibility:hidden;
@@ -51,6 +48,25 @@ img{
     font-size: 14px;
 }
 
+div{
+    position: relative;
+}
+.container{
+    position:absolute;
+    left:50%;
+    top:50vh;
+    transform: translate(-50%, -50%);
+    /* display: flex;
+    justify-content: center; */
+}
+.character{
+    width:15vh;
+    position:absolute;
+    right:52vh;
+    bottom:21vh;
+    transform: translate( -50%,-50%);
+}
+    
 
 
 
