@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="questions.css"> <!--reference to CSS document-->
+</head>
+<body>
+    <h1 class="levelTitle" id="newLevelPage">Level 1</h1>
+    <div class="question">
+        <p>If you have 3 applces and your friend Jummy gives you 4 more, how many apples do you have?
+        </p>
+        <p>Hint: 3+4=?</p>
+    </div>
+
+    <p class="questionInputDis">Please input an interger ONLY (if confused, ask a adult near you)</p>
+
+    <input class="questionInput" type="number">
+    <button class="answerSubmit">Submit</button>
+
+    <div class="fishText">
+        <p class="fishTextAct">You better this right or else....</p>
+    </div>
+
+    <button class="questionPageClose" onclick="questionPageCloseFunction()">x</button>
+
+    <form class="closeConfirmPopup" id="closeConfirm">
+        <p>Return to Map. Are you sure? You will loose your progress for this level</p>
+
+        <button class="confirmPageCancel" onclick="confirmPageCancelFunction()">x</button>
+
+        <button class="confirmReturnToMap" onclick="confirmReturnFunction()">Return to Map</button>
+    </form>
+
+    <img class="fishCharacter" src="../images/tempBlueTang.jpg">
+
+    <button class="nextQuestion" onlick="" >Next</button>
+
+    <script src="questions.js"></script> <!--reference to JS document-->
+</body>
+</html>
