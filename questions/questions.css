@@ -1,0 +1,137 @@
+body{
+    background-color: rgb(177, 227, 229);
+}
+
+.levelTitle{
+    position: absolute;
+    font-size: 40px;
+    top: 10%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.question{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    padding: 22px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 700px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.questionInputDis{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.questionInput{
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    top: 60%;
+    left: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.answerSubmit{
+    position: absolute;
+    height: 45px;
+    width: 100px;
+    top: 60%;
+    left: 60%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.fishText{
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    top: 82%;
+    left: 15%;
+    width: 350px;
+    height: 40px;
+}
+
+.fishtextAct{
+    text-align: center;
+    position: absolute;
+} /*come back to this, or may not be needd*/
+
+.questionPageClose{
+    color: rgb(0, 0, 0);
+    background-color: #ff0000;
+    position: absolute;
+    top: 3%;
+    left: 93%;
+    font-size: 18px;
+}
+
+.closeConfirmPopup{
+    visibility: hidden;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 35px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -75%);
+}
+
+.confirmPageCancel{
+    color: rgb(0, 0, 0);
+    background-color: #ff0000;
+    position: absolute;
+    top: 3%;
+    left: 93%;
+    font-size: 18px;
+}
+
+.confirmReturnToMap{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    font-size: 18px;
+}
+
+.fishCharacter{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 90%;
+    left: 8%;
+    transform: translate(-50%, -75%);
+}
+
+.nextQuestion{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -75%);
+}
+
+
