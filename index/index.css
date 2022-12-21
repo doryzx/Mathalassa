@@ -83,6 +83,7 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
 }
 
 .oldUserPopupText {
@@ -212,6 +213,17 @@ h4 {
     }
 
 
+.container{
+  background:#ff0000;
+}
 
+.active{
+  filter: blur(20px); 
+}
+
+.container .content{
+  position: relative;
+  max-width: 800px;
+}
   
 

@@ -20,4 +20,9 @@ function theFunctionAbout() {
     const listUsername = document.getElementById("user").value;
     console.log(listUsername);
   }
+
+  function toggle(){
+    var blur = document.getElementById("blur");
+    blur.classList.toggle("active");
+  }
   
