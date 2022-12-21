@@ -113,8 +113,9 @@ button{
     opacity:0.9;
     width:15vh;
     position:absolute;
-    right:52vh;
-    bottom:23.5vh; /*translate the fish from the center*/
+    /*translate the fish from the center*/
+    right:52vh ; /*one unit is 23 vh*/
+    bottom:23vh; /*one unit is 23.5vh*/
     transform: translate( -50%,-50%); /*set the center of the fish*/
 }
     
