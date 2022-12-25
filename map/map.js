@@ -1,8 +1,10 @@
 function levelPreviewOpen(){
     document.getElementById("levelPreview").style.visibility="visible";
+    document.getElementById("cover").classList.toggle("blur");
 }
 function levelPreviewClose(){
     document.getElementById("levelPreview").style.visibility="hidden";
+    document.getElementById("cover").classList.toggle("blur");
 }
 var node = 0; //set their node to 0, will change this once i can access a recent node var
 let pathways=[
