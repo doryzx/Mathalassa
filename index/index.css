@@ -1,8 +1,16 @@
-body {
-    background-image: url('../images/backgroundimagethree.jpg'); /*set up background*/
+/*body {
+    background-image: url('../images/backgroundimagethree.jpg'); set up background
     background-repeat : no-repeat;
     background-size: cover;
-  }
+  } */
+
+img{
+  position:absolute;
+  top:0%;
+  left:0%;
+  width:100%;
+  height:100%;
+}
 
 .aboutPopup {/*About button*/
   background-color: #ffffff;
@@ -212,18 +220,14 @@ h4 {
     transform: translate(-50%, -50%);
     }
 
-
-.container{
-  background:#ff0000;
+.blur{
+  filter:blur(20px);
+  position:absolute;
+  top:0%;
+  left:0%;
+  width:100%;
+  height:100%;
 }
 
-.active{
-  filter: blur(20px); 
-}
-
-.container .content{
-  position: relative;
-  max-width: 800px;
-}
   
 

@@ -15,18 +15,18 @@ document.addEventListener("keyup", function(event) {
         move("down");
     }
 });
-const node = 0;
-while(node<14){
-    switch(node){
-        case 0:
-            document.addEventListener("keyup", function(event) {
-                if (event.code === "ArrowDown"){
-                    move("down");
-                    node=1;
-                }}); 
-            break;
-    }
-}
+// const node = 0;
+// while(node<14){
+//     switch(node){
+//         case 0:
+//             document.addEventListener("keyup", function(event) {
+//                 if (event.code === "ArrowDown"){
+//                     move("down");
+//                     node=1;
+//                 }}); 
+//             break;
+//     }
+// }
 function move(direction){
     const xLength = Math.round((window.innerHeight*0.23/0.999425 +Number.EPSILON)*1000)/1000;
     const yLength = Math.round((window.innerHeight*0.235/0.999425 + Number.EPSILON)*1000)/1000;
