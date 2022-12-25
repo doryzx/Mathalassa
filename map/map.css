@@ -1,3 +1,6 @@
+body{
+    background-color: #ab8159e3; /*might not keep 98714de3*/
+}
 .map{
     height:100%;
     position:absolute;
@@ -7,7 +10,7 @@
     transform: translate(-50%, -50%);
 }
 
-div{
+.constant{
     position: relative;
 }
 
