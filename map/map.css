@@ -1,3 +1,6 @@
+body{
+    background-color: #ab8159e3; /*might not keep 98714de3*/
+}
 .map{
     height:100%;
     position:absolute;
@@ -7,47 +10,7 @@
     transform: translate(-50%, -50%);
 }
 
-.levelPreview{  
-    background-color: #ffffff;
-    border: none;
-    visibility:hidden;
-    border-radius: 4px;
-    color: rgb(0, 0, 0);
-    padding: 22px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width:60%;
-    height:80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.levelPreviewTitle{
-    color: rgb(0, 0, 0);
-    position: absolute;
-    width:80%;
-    text-align: center;
-    top: 15%;
-    left: 10%;
-    font-size: 30px;
-}
-
-.levelPreviewGeneral{
-    color: rgb(0, 0, 0);
-    position: absolute;
-    width:80%;
-    text-align: center;
-    top: 50%;
-    left: 10%;
-    font-size: 14px;
-}
-
-div{
+.constant{
     position: relative;
 }
 
@@ -118,8 +81,66 @@ button{
     bottom:23vh; /*one unit is 23.5vh*/
     transform: translate( -50%,-50%); /*set the center of the fish*/
 }
-    
 
+.levelPreview{  
+    background-color: #ffffff;
+    border: none;
+    visibility:hidden;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    padding: 22px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width:60%;
+    height:80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.levelPreviewTitle{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width:80%;
+    text-align: center;
+    top: 15%;
+    left: 10%;
+    font-size: 30px;
+}
+
+.levelPreviewGeneral{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width:80%;
+    text-align: center;
+    top: 50%;
+    left: 10%;
+    font-size: 14px;
+}
+
+.levelContinue{
+    position:relative;
+    opacity:1;
+    left:70vh;
+    top:50vh;
+    left:70vh;
+}
+
+.levelPreviewClose{
+    position:relative;
+    bottom:25vh;
+    left:65vh;
+    color: rgb(0, 0, 0);
+    background-color: #ff0000;
+    font-size: 18px;
+    opacity:1;
+    width:7vh;
+    height:7vh;
+}
 
 
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--this file contains all the element of the map page and its popups-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,24 +8,10 @@
     <link rel="stylesheet" href="map.css"> <!--reference to CSS file-->
 </head>
 <body>
+    <div id="cover"><!--to contain all elements needed for blurring-->
     <img class = "map" src="../images/tempMap.jpg">
     
-
-    <form class="levelPreview" id="levelPreview ">
-        <label class="levelPreviewTitle" for="start">LEVEL 1</label>
-
-        <label class="levelOneGeneral">Simple Addition</label>
-        <p class="levelOneDescriptionTitle">How to do Simple Addition</p>
-        <p class="levelOneDescription">Numbers combined or added together is called "addition", giving you the SUM. A addition of numbers is represented through "+"</p> <!--These will be subjective to each individual level-->
-
-        <p>You have to answer 5 questions. You have three lives. GOOD LUCK!</p> <!--This will stay the name throughout all levels-->
-
-        <button class="levelContinue" onclick= >Let's Go!</button>
-
-        <button class="levelPreviewClose" onclick="theFunctionCloseLevelOne()">x</button>
-    </form>
-
-    <div>
+    <div class="constant"> <!--code for placing fish and buttons-->
         <div class="container"> <!--for centering the element inside-->
             <button  class="buttonStart">Start</button>
             <button  class="buttonOne">1</button>
@@ -41,6 +27,20 @@
             
         </div>
     </div>
+    </div>
+
+    <form class="levelPreview" id="levelPreview"> <!--code for level preview popup-->
+        <label class="levelPreviewTitle" for="start">LEVEL 1</label>
+        <label class="levelOneGeneral">Simple Addition</label>
+        <p class="levelOneDescriptionTitle">How to do Simple Addition</p>
+        <p class="levelOneDescription">Numbers combined or added together is called "addition", giving you the SUM. A addition of numbers is represented through "+"</p> <!--These will be subjective to each individual level-->
+
+        <p>You have to answer 5 questions. You have three lives. GOOD LUCK!</p> <!--This will stay the same throughout all levels-->
+
+        <a href="../questions/questions.html"><button class="levelContinue" type="button">Let's Go!</button></a>
+        <button class="levelPreviewClose" onclick="theFunctionCloseLevelOne()">x</button>
+    </form>
+
     <script src="map.js"></script> <!--reference to js file-->  
 </body>
 </html>
