@@ -33,34 +33,34 @@ let pathways=[
 
 document.addEventListener("keyup", function(event) {
     if (event.code === "ArrowRight") {
-        if(check("right")){
+        if(checkNode("right")){
             move("right");
         }
     }
     if (event.code === "ArrowLeft"){
-        if(check("left")){
+        if(checkNode("left")){
             move("left");
         }
     }
     if (event.code === "ArrowUp"){
-        if(check("up")){
+        if(checkNode("up")){
             move("up");
         }
     }
     if (event.code === "ArrowDown"){
-        if(check("down")){
+        if(checkNode("down")){
             move("down");
         }
     }
     if (event.code ==="Enter"){
-        if(check("enter")){
+        if(checkNode("enter")){
             levelPreviewOpen();
-            // window.open('../../questions/questions.html','_self');
+            // window.open('../../questions/questions.html','_self'); 
          }
     }
 });
 
-function check(command){
+function checkNode(command){
     if(command=="up"){
         const a = pathways[node][0];
         if(a!= 0){
@@ -121,247 +121,6 @@ function check(command){
         }
     }
 }
-// function check(command){
-//     switch(node){ //will have to add passed level checks to see if they can move further
-//         case 0:
-//             if(command=="down"){
-//                 node++;
-//                 return true;  
-//             }
-//             break;
-//         case 1:
-//             if(command=="up"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="right"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 2:
-//             if(command=="left"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="up"){
-//                 node++;
-//                 return true;
-//             }
-//             if(command=="enter"){
-//                 //set level as level 1
-//                 return true;
-//             }
-//             break;
-//         case 3:
-//             if(command=="down"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="right"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 4:
-//             if(command=="left"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="down"){
-//                 node++;
-//                 return true;
-//             }
-//             if(command=="enter"){
-//                 //set level as level 2
-//                 return true;
-//             }
-//             break;
-//         case 5:
-//             if(command=="up"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="down"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 6:
-//             if(command=="up"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="left"){
-//                 node++;
-//                 return true;
-//             }
-//             if(command=="enter"){
-//                 //set level to 3
-//                 return true;
-//             }
-//             break;
-//         case 7:
-//             if(command=="right"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="down"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 8:
-//             if(command=="up"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="right"){
-//                 node++;
-//                 return true;
-//             }
-//             if(command=="enter"){
-//                 //set level to 4
-//                 return true;
-//             }
-//             break;
-//         case 9:
-//             if(command=="left"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="right"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 10:
-//             if(command=="left"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="right"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 11:
-//             if(command=="left"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="up"){
-//                 node++;
-//                 return true;
-//             }
-//             if(command=="enter"){
-//                 //set level to 5
-//                 return true;
-//             }
-//             break;
-//         case 12:
-//             if(command=="down"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="up"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 13:
-//             if(command=="down"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="left"){
-//                 node++;
-//                 return true;
-//             }
-//             if(command=="enter"){
-//                 //set level to 6
-//                 return true;
-//             }
-//             break;
-//         case 14:
-//             if(command=="right"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="up"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 15:
-//             if(command=="down"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="right"){
-//                 node++;
-//                 return true;
-//             }
-//             if(command=="enter"){
-//                 //set level to 7
-//                 return true;
-//             }
-//             break;
-//         case 16:
-//             if(command=="left"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="right"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 17:
-//             if(command=="left"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="right"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 18:
-//             if(command=="left"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="down"){
-//                 node++;
-//                 return true;
-//             }
-//             if(command=="enter"){
-//                 //set level
-//                 return true;
-//             }
-//             break;
-//         case 19:
-//             if(command=="up"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="down"){
-//                 node++;
-//                 return true;
-//             }
-//             break;
-//         case 20:
-//             if(command=="up"){
-//                 node--;
-//                 return true;
-//             }
-//             if(command=="enter"){
-//                 //enter last leve? show preview?
-//                 return true;
-//             }   
-//     }     
-// }
 
 function move(direction){
     const xLength = Math.round((window.innerHeight*0.23/0.999425 +Number.EPSILON)*1000)/1000;
