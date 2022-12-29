@@ -28,6 +28,10 @@
 
     <button class="questionPageClose" onclick="questionPageCloseFunction()">x</button>
 
+    <img class="fishCharacter" src="../images/tempBlueTang.jpg">
+
+    <button class="nextQuestion" onlick="" >Next</button>
+
     </div>
 
     <form class="closeConfirmPopup" id="closeConfirm">
@@ -35,12 +39,24 @@
 
         <button class="confirmPageCancel" onclick="confirmPageCancelFunction()">x</button>
 
-        <button class="confirmReturnToMap" onclick="confirmReturnFunction()">Return to Map</button>
+        <a href="../map/map.html"><button class="confirmReturnToMap" type="button">Return to Map</button></a>
+
     </form>
 
-    <img class="fishCharacter" src="../images/tempBlueTang.jpg">
+    <form class="levelFailedPopup" id="levelFailed">
+        <p class="failed">You failed</p> 
+        <p class="failedLevelNumber">Level One</p> <!-- Subjective to each level -->
+        <p class="failedInfo">You lost all of your lives. Return to map to try again</p>
+        <a href="../map/map.html"><button class="returnToMaps" type="button">Return to Map</button></a>
+        <img class="fishCharacter" src="../images/tempBlueTang.jpg">
+    </form>
 
-    <button class="nextQuestion" onlick="" >Next</button>
+    <form class="levelPassedPopup" id="levelPassed">
+        <p class="passed">You passed</p>
+        <p class="passedLevelNumber">Level One</p> <!--Subjective to each level-->
+        <a href="../map/map.html"><button class="returnToMaps" type="button">Return to Map</button></a>
+        <img class="fishCharacter" src="../images/tempBlueTang.jpg">
+    </form>
 
     <script src="questions.js"></script> <!--reference to JS document-->
 </body>
