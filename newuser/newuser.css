@@ -6,9 +6,9 @@ body{
 /*code for row spacing*/
 h1{
     position:relative;
-    font-size: 4em;
+    font-size: 13vh;
     width:100%;
-    top:5vh;
+    top:3vh;
     text-align: center;
 }
 h2{
@@ -24,12 +24,14 @@ p{
     top:65vh; 
 }
 img{
-    position: relative;
-    margin: 6.3vw;
+    position: absolute;
+    top:45vh;
+    border-radius:50%;
+    /* margin: 6.3vw;
     left:12.5vw;
     border-radius: 50%;
     margin-top: 4vh;
-    margin-bottom :0vh;
+    margin-bottom :0vh; */
 }
 .select{
     color:brown;
