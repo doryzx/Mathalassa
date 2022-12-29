@@ -73,7 +73,6 @@ button{
     bottom: -16vh;
 }
 .character{
-    opacity:0.9;
     width:15vh;
     position:absolute;
     /*translate the fish from the center*/

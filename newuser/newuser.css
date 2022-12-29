@@ -5,56 +5,60 @@ body{
 
 /*code for row spacing*/
 h1{
-    font-size: 50px;
+    position:relative;
+    font-size: 4em;
     width:100%;
+    top:5vh;
     text-align: center;
 }
 h2{
     font-size: 30px;
+    text-align: center;
     width:30%;
-    top:57%;
+    top:57vh;
 }
 p{
     font-size:20px;
+    text-align: center;
     width: 30%;
-    top:64%; 
+    top:65vh; 
 }
 img{
     position: relative;
-    margin: 7.6%;
-    left: 0%;
+    margin: 6.3vw;
+    left:12.5vw;
     border-radius: 50%;
-    margin-top: 3%;
-    margin-bottom: 0%;
+    margin-top: 4vh;
+    margin-bottom :0vh;
 }
 .select{
     color:brown;
     background-color: aqua;
     border-color: rgb(138, 136, 136);
-    margin-right: 21%;
-    position: relative;
-    margin-top: 10%;
-    left:16.5%;
-    height: 40px;
-    width: 100px;
+    top:80vh;
+    height:8vh;
+    width:16vh;
     border-radius: 4px; 
 }
 
 /*code for columnal spacing of text*/
 .fish1{
     position:absolute;
-    text-align:center;
-    right:64%;
+    /* text-align:center; */
+    transform: translate(-50%,-50%);
+    left:25vw;
 }
 .fish2{
     position:absolute;
-    text-align: center;
-    left: 35%;
+    /* text-align: center; */
+    transform: translate(-50%,-50%);
+    left:50vw;
 }
 .fish3{
     position:absolute;
-    text-align: center;
-    left:64%;
+    /* text-align: center; */
+    transform: translate(-50%,-50%);
+    left:75vw;
 }
 
 .newUsername{
