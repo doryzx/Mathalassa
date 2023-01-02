@@ -8,12 +8,18 @@ app.get('/', (req, res) => {        //get requests to the root ("/") will route 
     res.sendFile('index.html', {root: __dirname});      //server responds by sending the index.html file to the client's browser
                                                         //the .sendFile method needs the absolute path to the file, see: https://expressjs.com/en/4x/api.html#res.sendFile 
 });
-
+var path = require('path')
+app.use(express.static(path.join(__dirname, '/')));
+app.use(express.static(path.join(__dirname, '/newuser')));
+app.use(express.static(path.join(__dirname, '/images')));
+app.use(express.static(path.join(__dirname, '/map')));
+app.use(express.static(path.join(__dirname, '/questions')));
+app.use(express.static(path.join(__dirname, '/lore')));
 app.listen(port, () => {            //server starts listening for any attempts from a client to connect at port: {port}
     console.log(`Now listening on port ${port}`); 
 });
-var path = require('path')
-app.use(express.static(path.join(__dirname, '/')));
+
+// res.sendFile(__dirname + '/index.html');});
 
 function theFunctionAbout() {
     document.getElementById("thePopupAbout").style.visibility="visible";
@@ -37,16 +43,5 @@ function theFunctionAbout() {
     document.getElementById("cover").classList.toggle("blur");
   }
 
-  // var fs = require('fs');
-  // var array = fs.readFileSync('data.txt').toString().split("\n");
-  // for(i in array) {
-  //     console.log(array[i]);
-  // }
-
-  // function checkPlayer(){
-
-  //   let username = document.getElementById("username");
-  //   if ()
-
-  // }
+ 
 
