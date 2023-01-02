@@ -25,9 +25,9 @@
         <h2 class="fish3">Blue Tang</h2>
         <p class="fish3">Paracanthurus<br>hepatus</p>
 
-        <button class="select fish1" onclick="selectFishFunctionOpen()">Select</button>
-        <button class="select fish2" onclick="selectFishFunctionOpen()">Select</button>
-        <button class="select fish3" onclick="selectFishFunctionOpen()">Select</button>
+        <button class="select fish1" onclick="setFish1()">Select</button>
+        <button class="select fish2" onclick="setFish2()">Select</button>
+        <button class="select fish3" onclick="setFish3()">Select</button>
     </div>
   
 <div class="newUsernameDiv">
@@ -41,10 +41,13 @@
 
             <button class="usernameSubmit" onclick="getValueOfSelect()">Submit</button>
 
+            <p class="failed" id="failed">sorry, get another username</p>
+
         <button class="selectFishClose" onclick="selectFishFunctionClose()">x</button>
     </form>
 </div>
 
+    <script src="../main.js"></script>
     <script src="newuser.js"></script> <!--reference to js file-->
 </body>
 </html>

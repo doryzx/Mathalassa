@@ -1,3 +1,16 @@
+var fish;
+function setFish1(){
+  fish="../images/guppy.png";
+  selectFishFunctionOpen();
+}
+function setFish2(){
+  fish="../images/discus.png";
+  selectFishFunctionOpen();
+}
+function setFish3(){
+  fish="../images/blueTang.png";
+  selectFishFunctionOpen();
+}
 function selectFishFunctionOpen() {
     document.getElementById("newUsername").style.visibility="visible";
     document.getElementById("cover").classList.toggle("blur");
@@ -11,6 +24,13 @@ function selectFishFunctionOpen() {
 
   function getValueOfSelect(){
     event.preventDefault();
-    const listNewUsername = document.getElementById("username").value;
-    console.log(listNewUsername);
+    var username = document.getElementById("username").value;
+    if(checkPlayer(username)==false){
+      newPlayer(username, fish, 0);
+      window.open("../map/map.html","_self");
+    } 
+    else if (checkPlayer(username)==true){
+      document.getElementById("failed").style.visibility="visible";
+    }
   }
+
