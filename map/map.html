@@ -24,14 +24,14 @@
             <button  class="buttonSeven">7</button>
             <button  class="buttonEight">8</button>
             <button  class="buttonEnd">End</button>
-            <img class="character" src="../images/discus.png" id="character"> <!--user character-->
+            <img class="character" id="character"> <!--user character-->
             
         </div>
     </div>
     </div>
 
     <form class="levelPreview" id="levelPreview"> <!--code for level preview popup-->
-        <label class="levelPreviewTitle" for="start">LEVEL 1</label>
+        <label class="levelPreviewTitle" for="start" id="levelPreviewTitle">LEVEL 1</label>
         <label class="levelOneGeneral">Simple Addition</label>
         <p class="levelOneDescriptionTitle">How to do Simple Addition</p>
         <p class="levelOneDescription">Numbers combined or added together is called "addition", giving you the SUM. A addition of numbers is represented through "+"</p> <!--These will be subjective to each individual level-->
@@ -42,6 +42,7 @@
         <button class="levelPreviewClose" onclick="theFunctionCloseLevelOne()">x</button>
     </form>
 
+    <script src ="../main.js"></script>
     <script src="map.js"></script> <!--reference to js file-->  
 </body>
 </html>

@@ -1,7 +1,7 @@
 // const fs = require('fs')//import read/write module
 //  var logger = fs.createWriteStream('data.txt')
 //  var writeLine = (line) => logger.write(`\n${line}`);
-//    writeLine('Data written to a new me');
+//    writeLine('Data written to a bew me');
 //    writeLine("fishdoesart was here");
 //    logger.end() // close string
  
@@ -21,22 +21,56 @@ var player;
         this.name= name;
         this.character= character;
         this.levelCompleted= levelCompleted;
-        this.node= 0;
         this.levelCurrent=0;
+        this.node=0;
     }
     //methods
-    // toString(){
+    toString(){
+        return (this.name+","+this.character+","+this.levelCompleted+","+this.levelCurrent+","+this.node);
+    }
+}//end class
 
-    // }
-
-
-}
 function newPlayer(){
- player = new user("bob", "../images/blueTang.png", 0);
+ player = new user("bob", "../images/guppy.png", 8);
 }
+newPlayer();
 function checkPlayer(username){//\will changee
     return true;
 }
+//get and set functions for external use
+function getNode(){
+    //call reader of first line
+    return player.node;
+}
+function setNode(newNode){
+    player.node=newNode;
+    //call writer (of first line?)
+}
+function getLevelCurrent(){
+    //call reader
+    return player.levelCurrent;
+}
+function setLevelCurrent(level){
+    player.levelCurrent=level;
+    //call writer
+}
+function getLevelCompleted(){
+    //call reader
+    return player.levelCompleted;
+}
+function setLevelCompleted(level){
+    player.levelCompleted=level;
+    //call writer
+}
+function getName(){
+    //call reader
+    return player.name;
+}
+function getCharacter(){
+    //call wreader
+    return player.character;
+}
+
 
 
 
