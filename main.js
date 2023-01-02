@@ -34,10 +34,11 @@ var player;
     }
 }//end class
 write();
-function newPlayer(){
- player = new user("bob", "../images/guppy.png", 8);
+function newPlayer(name,character,completed){
+ player = new user(name, character, completed);
 }
-newPlayer();
+newPlayer("bob", "../images/guppy.png", 8);
+
 function checkPlayer(username){//\will changee
     return true;
 }
