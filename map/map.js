@@ -1,3 +1,4 @@
+
 function levelPreviewOpen(){//what happens when the preview is opened
     document.getElementById("levelPreviewTitle").innerHTML="Level "+getLevelCurrent();
     document.getElementById("levelPreview").style.visibility="visible";
