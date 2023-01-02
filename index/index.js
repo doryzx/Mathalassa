@@ -20,14 +20,16 @@ function theFunctionAbout() {
     document.getElementById("cover").classList.toggle("blur");
   }
 
-  function getValue(){
-    event.preventDefault();
-    const listUsername = document.getElementById("user").value;
-    console.log(listUsername);
+  var fs = require('fs');
+  var array = fs.readFileSync('data.txt').toString().split("\n");
+  for(i in array) {
+      console.log(array[i]);
   }
 
-  /*function toggle(){
-    var blur = document.getElementById("blur");
-    blur.classList.toggle("active");
-  }*/
-  
+  // function checkPlayer(){
+
+  //   let username = document.getElementById("username");
+  //   if ()
+
+  // }
+
