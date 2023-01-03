@@ -1,5 +1,6 @@
+var fs = require('fs');
 // const fs = require('fs')//import read/write module
-import * as fs from 'fs'
+// import * as fs from 'fs'
 function write(){
  var logger = fs.createWriteStream('data.txt')
  var writeLine = (line) => logger.write(`\n${line}`);
