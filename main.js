@@ -18,6 +18,7 @@ fs.writeFile("data.txt", "HELLOOO",  function (err) {
   })};
 write();
 read();
+return "hi";
 
 
 

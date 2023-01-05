@@ -63,7 +63,23 @@ function getCharacter(){
     return player.character;
 }
 
-
+function tell(){
+    var xhr = new XMLHttpRequest();
+  
+        // Making our connection  
+        var url = 'data.txt';
+        xhr.open("GET", url, true);
+  
+        // function execute after request is successful 
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+            }
+        }
+        // Sending our request 
+        xhr.send();
+}
+tell();
 
 
  
