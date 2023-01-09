@@ -23,6 +23,11 @@ var player;
 
 function newPlayer(name,character,completed){
  player = new user(name, character, completed);
+ //add to array, move to top
+}
+function oldPlayer(name,character,completed){
+    player= newuser(name, character, completed);
+    //move to top
 }
 newPlayer("bob", "../images/guppy.png", 8);
 
