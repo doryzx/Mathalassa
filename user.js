@@ -63,23 +63,39 @@ function getCharacter(){
     return player.character;
 }
 
-function tell(){
-    var xhr = new XMLHttpRequest();
+// function hear(){
+//     var xhr = new XMLHttpRequest();
   
-        // Making our connection  
-        var url = 'data.txt';
-        xhr.open("GET", url, true);
+//         // Making our connection  
+//         var url = 'data.txt';
+//         xhr.open("GET", url, true);
   
-        // function execute after request is successful 
-        xhr.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                console.log(this.responseText);
-            }
-        }
-        // Sending our request 
-        xhr.send();
-}
-tell();
+//         // function execute after request is successful 
+//         xhr.onreadystatechange = function () {
+//             if (this.readyState == 4 && this.status == 200) {
+//                 console.log(this.responseText);
+//             }
+//         }
+//         // Sending our request 
+//         xhr.send();
+// }
+// function tell(){
+//     let xhr = new XMLHttpRequest();
+//     xhr.open("POST", "main.js");
+//     xhr.setRequestHeader("Accept", "text/plain");
+//     xhr.setRequestHeader("Content-Type", "text/plain");
+    
+//     xhr.onreadystatechange = function () {
+//       if (xhr.readyState === 4) {
+//         console.log(xhr.status);
+//         console.log(xhr.responseText);
+//       }};
+    
+//     let data = "hello";
+    
+//     xhr.send(data);
+// }
+// tell();
 
 
  
