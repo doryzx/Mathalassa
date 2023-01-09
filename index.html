@@ -28,7 +28,9 @@
                     <input class="inputNameHere" type="text" name="username" id="user" minlength="2" maxlength="15" size="10" >
                 </div>
 
-                <button class="inputSubmit" onclick="checkPlayer()" id="username">Submit</button>
+                <button class="inputSubmit" onclick="checkOldPlayer()" id="username">Submit</button>
+
+                <p class="failed" id="failed">invalid username, try again</p>
 
             <button class="oldUserPopupClose" onclick="theFunctionOldClose()">x</button>
         </form>
@@ -46,6 +48,7 @@
 
     
     <script src="main.js"></script> <!--remeber to be on top-->
+    <script src="user.js"></script>
     <script src="index.js"></script> <!--reference to JS document-->
 </body>
 </html>

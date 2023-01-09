@@ -229,5 +229,9 @@ h4 {
   height:100%;
 }
 
+.failed{
+  visibility: hidden;
+}
+
   
 

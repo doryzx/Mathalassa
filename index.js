@@ -43,5 +43,30 @@ function theFunctionAbout() {
     document.getElementById("cover").classList.toggle("blur");
   }
 
+  function checkOldPlayer(){
+    var username = document.getElementById("username").value;
+
+      // var text = fs.readFileSync("./data.txt").toString('utf-8');
+      // var username = text.split("\n");
+    
+    if (checkPlayer(username)==true){
+      // read the file and load the user information
+      // var completed = <set it to the value from file>;
+      // var character = <set it to the value from file>;
+      // var name = <set it to hte value from file>;
+      
+      // var completed = getLevelCompleted();
+      // var character = getCharacter();
+      // var name = getName();
+
+      newPlayer(name, character, completed);
+    } 
+
+    else if(checkPlayer(username)==false){
+      document.getElementById("failed").style.visibility="visible";
+    }
+
+  }
+
  
 
