@@ -25,8 +25,9 @@ function newPlayer(name,character,completed){
  player = new user(name, character, completed);
  //add to array, move to top
 }
-function oldPlayer(name,character,completed){
-    player= newuser(name, character, completed);
+function oldPlayer(name){
+    //find
+    // player= newuser(name, character, completed);
     //move to top
 }
 newPlayer("bob", "../images/guppy.png", 8);
@@ -68,3 +69,4 @@ function getCharacter(){
     return player.character;
 }
 
+read();

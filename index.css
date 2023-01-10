@@ -1,8 +1,6 @@
-/*body {
-    background-image: url('../images/backgroundimagethree.jpg'); set up background
-    background-repeat : no-repeat;
-    background-size: cover;
-  } */
+body {
+    font-family:Verdana, sans-serif;
+  }
 
 img{
   position:absolute;
@@ -12,7 +10,35 @@ img{
   height:100%;
 }
 
-.aboutPopup {/*About button*/
+.title{
+width:100vh;
+height:auto;
+left:50vw;
+top:30vh;
+transform:translate(-50%,-50%);
+}
+
+h2{
+  position: absolute;
+  left:50%;
+  top:3%;
+  transform: translate(-50%, -50%);
+}
+
+h3 {
+  position:absolute; 
+  left:50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+h4 {
+  position:absolute; 
+  left:95%;
+  top: 93%;
+  transform: translate(-50%, -50%);
+}
+.mainButton{
   background-color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -21,40 +47,37 @@ img{
   text-align: center;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;
   width: 300px;
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
-/* The actual popup */
-.aboutPopupText {
+.mainPopup{
   visibility: hidden;
-  width: 500px;
-  height: 300px;
+  width: 80vh;
+  height: 50vh;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   border-radius: 4px;
   padding: 35px;
   position: absolute;
-  top: 80%;
+  top: 75%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -75%);
 }
-
-.aboutPopup .aboutPopupText::after {
+.newuser{/*New User set up*/
   position: absolute;
-  top: 20%;
+  top: 61%;
   left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgb(255, 255, 255) transparent transparent transparent;
-} 
+  transform: translate(-50%, -50%);
+}
+
+.aboutPopup {/*About button*/
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* The about popup */
 
 .aboutPopupInfo{
   color: rgb(0, 0, 0);
@@ -76,48 +99,11 @@ img{
 }
 
 .oldUserPopup {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  color: rgb(0, 0, 0);
-  padding: 22px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 300px;
   position: absolute;
   top: 73%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
 }
-
-.oldUserPopupText {
-  visibility: hidden;
-  width: 500px;
-  height: 325px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border-radius: 4px;
-  padding: 35px;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -75%);
-}
-
-.oldUserPopup .oldUserPopupText::after {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: rgb(255, 255, 255) transparent transparent transparent;
-} 
 
 .oldUserPopupInfo{
   color: rgb(0, 0, 0);
@@ -165,60 +151,7 @@ input[type=text]{
   font-size: 18px;
   width: 75px;
   border-radius: 4px;
-  cursor: pointer;
 }
-
-
-h1{
-  position: absolute;
-  left:50%;
-  top:15%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-size: 100px;
-}
-  
-h2{
-  position: absolute;
-  left:50%;
-  top:3%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-h3 {
-  position:absolute; 
-  left:50%;
-  top: 40%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-h4 {
-  position:absolute; 
-  left:95%;
-  top: 93%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.button1 {/*New User set up*/
-    background-color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    color: rgb(0, 0, 0);
-    padding: 22px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 300px;
-    position: absolute;
-    top: 61%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    }
 
 .blur{
   filter:blur(20px);
