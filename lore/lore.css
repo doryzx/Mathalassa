@@ -30,3 +30,12 @@
     display: inline-block;
     line-height: 1em;
   }
+
+  .scroll{
+    position:absolute;
+    width:100vw;
+    height:55vw;
+    transform:translate(-50%,-50%);
+    left:50vw;
+    top:48vh;
+  }
