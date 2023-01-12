@@ -20,15 +20,14 @@ class user{
 }//end class
 var player;
  
-
 function newPlayer(name,character,completed){
  player = new user(name, character, completed);
  //add to array, move to top
 }
 function oldPlayer(name){
-    //find
-    // player= newuser(name, character, completed);
-    //move to top
+    //find original
+    // player= new user(original.get name, character, completed);
+    //move original to top
 }
 newPlayer("bob", "../images/guppy.png", 8);
 
@@ -68,5 +67,3 @@ function getCharacter(){
     //call wreader
     return player.character;
 }
-
-read();

@@ -11,24 +11,25 @@
     <div id="cover">
         
     <h1 class="levelTitle" id="newLevelPage">Level 1</h1>
-    <div class="question">
-        <p>If you have 3 applces and your friend Jummy gives you 4 more, how many apples do you have?
+    <div class="questionBox">
+        <p class="question" id="question">If you have 3 applces and your friend Jummy gives you 4 more, how many apples do you have?
         </p>
-        <p>Hint: 3+4=?</p>
+        <p class="hint" id="hint">Hint: 3+4=?</p>
     </div>
 
-    <p class="questionInputDis">Please input an interger ONLY (if confused, ask a adult near you)</p>
+    <p class="questionInputDisclaimer">Please input an interger ONLY (if confused, ask a adult near you)</p>
 
-    <input class="questionInput" type="number">
-    <button class="answerSubmit">Submit</button>
+    <input class="questionInput" id="questionInput" type="number">
+    <button class="answerSubmit" onclick="setResponse()">Submit</button>
 
+    
     <div class="fishText">
         <p class="fishTextAct">You better this right or else....</p>
     </div>
+    <img class="textBubble" src="../images/speechBubble.png">
+    <img class="character" id="character"> 
 
     <button class="questionPageClose" onclick="questionPageCloseFunction()">x</button>
-
-    <img class="fishCharacter" src="../images/tempBlueTang.jpg">
 
     <button class="nextQuestion" onlick="" >Next</button>
 
@@ -43,22 +44,22 @@
 
     </form>
 
-    <form class="levelFailedPopup" id="levelFailed">
+    <form class="levelFailed" id="levelFailed">
         <p class="failed">You failed</p> 
         <p class="failedLevelNumber">Level One</p> <!-- Subjective to each level -->
         <p class="failedInfo">You lost all of your lives. Return to map to try again</p>
         <a href="../map/map.html"><button class="returnToMaps" type="button">Return to Map</button></a>
-        <img class="fishCharacter" src="../images/tempBlueTang.jpg">
+        <img class="character" id="character">
     </form>
 
-    <form class="levelPassedPopup" id="levelPassed">
+    <form class="levelPassed" id="levelPassed">
         <p class="passed">You passed</p>
         <p class="passedLevelNumber">Level One</p> <!--Subjective to each level-->
         <a href="../map/map.html"><button class="returnToMaps" type="button">Return to Map</button></a>
-        <img class="fishCharacter" src="../images/tempBlueTang.jpg">
+        <img class="character" id="character">
     </form>
 
-    <script src="../main.js"></script>
+    <script src="../user.js"></script>
     <script src="questions.js"></script> <!--reference to JS document-->
 </body>
 </html>
