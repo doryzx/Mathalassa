@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Questions</title>
+    <link rel="icon" href="../images/lenovo.png" type="image/icon type">
     <link rel="stylesheet" href="questions.css"> <!--reference to CSS document-->
 </head>
 <body>
     <div id="cover">
         
-    <h1 class="levelTitle" id="newLevelPage">Level 1</h1>
+    <h1 class="levelTitle" id="levelTitle"></h1>
     <div class="questionBox">
-        <p class="question" id="question">If you have 3 applces and your friend Jummy gives you 4 more, how many apples do you have?
+        <p class="question" id="question">
         </p>
-        <p class="hint" id="hint">Hint: 3+4=?</p>
+        <p class="hint" id="hint"></p>
     </div>
 
     <p class="questionInputDisclaimer">Please input an interger ONLY (if confused, ask a adult near you)</p>
+    <p class="message" id="message"></p>
 
     <input class="questionInput" id="questionInput" type="number">
     <button class="answerSubmit" onclick="setResponse()">Submit</button>
 
     
     <div class="fishText">
-        <p class="fishTextAct">You better this right or else....</p>
+        <p class="fishTextAct" id="fishTextAct">You've got this! This is easy-peasy</p>
     </div>
     <img class="textBubble" src="../images/speechBubble.png">
     <img class="character" id="character"> 
+    <img class="heart life1" id="life1" src="../images/heart.png">
+    <img class="heart life2" id="life2" src="../images/heart.png">
+    <img class="heart life3" id="life3" src="../images/heart.png">
 
     <button class="questionPageClose" onclick="questionPageCloseFunction()">x</button>
 
-    <button class="nextQuestion" onlick="" >Next</button>
+    <button class="nextQuestion" id="nextQuestion" onclick="nextQuestion()">Next</button>
 
     </div>
 
