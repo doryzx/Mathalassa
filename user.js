@@ -10,7 +10,7 @@ class user{
         this.name= name;
         this.character= character;
         this.levelCompleted= levelCompleted;
-        this.levelCurrent=0;
+        this.levelCurrent=1;
         this.node=0;
     }
     //methods
