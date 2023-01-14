@@ -173,3 +173,10 @@ function move(direction){
             break;
     } 
 }
+
+function help(){
+    document.getElementById("help").style.visibility="visible";
+    document.getElementById("cover").classList.toggle("blur");
+
+
+}
