@@ -150,5 +150,50 @@ button{
     height:100%;
   }
 
+.questionMark{
+    position:absolute;
+    width: 5vh;
+    height: 5vh;
+    transform:translate(-50%, -50%);
+    top: 95vh;
+    left: 97vw;
+}
+
+.help{
+    visibility: hidden;
+    position:absolute;
+    width: 50vh;
+    height: 20vh;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 4px;
+    padding: 35px;
+    transform:translate(-50%, -50%);
+    top: 20%;
+    left: 50%;
+}
+
+.helpText{
+    position: absolute;
+    text-align: center;
+    width: 45vh;
+    transform:translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+}
+
+.helpClose{
+    color: black;
+    background-color: #ff0000;
+    position: absolute;
+    width: 4vh;
+    height: 4vh;
+    top: 14%;
+    left: 92%;
+    font-size: 15px;
+}
+
+
+
 
 
