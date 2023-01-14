@@ -20,7 +20,7 @@ app.listen(port, () => {            //server starts listening for any attempts f
 });
 
 // res.sendFile(__dirname + '/index.html');});
-
+//code for popups
 function theFunctionAbout() {
     document.getElementById("thePopupAbout").style.visibility="visible";
     document.getElementById("cover").classList.toggle("blur");
@@ -43,20 +43,12 @@ function theFunctionAbout() {
     document.getElementById("cover").classList.toggle("blur");
   }
 
-  function checkOldPlayer(){
+  function checkOldPlayer(){//checks if the user exists
     event.preventDefault();
     var username = document.getElementById("username").value;
     if (checkPlayer(username)==true){
-      // read the file and load the user information
-      // var completed = <set it to the value from file>;
-      // var character = <set it to the value from file>;
-      // var name = <set it to hte value from file>;
-      
-      // var completed = getLevelCompleted();
-      // var character = getCharacter();
-      // var name = getName();
-
-      oldPlayer(username);
+  
+      oldPlayer(username);//call a function to move the player to top of txt file and make an object
       window.open("map/map.html","_self");
     } 
     else if(checkPlayer(username)==false){

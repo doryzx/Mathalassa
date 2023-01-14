@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="index.css"> <!--reference to CSS document-->
 </head>
 <body>
-    <div id="cover">
-    <img src="images/backgroundIndex.png">
+    <div id="cover"><!--for blurring-->
+    <img class="background" src="images/backgroundIndex.png">
     <h2>Welcome To</h2> 
-    <img class="title" src="images/titleImage2.png">
+    <img class="background title" src="images/titleImage2.png">
     <h3>by Dory and GuardCells</h3>
     <h4>v1.1.2</h4>
 
@@ -21,7 +21,7 @@
    <button class="oldUserPopup mainButton" onclick ="theFunctionOld()">Old User</button>
    <button class="aboutPopup mainButton" onclick ="theFunctionAbout()">About</button>
     </div>
-
+        <!--old user popup-->
         <form class="mainPopup" id="thePopupOld">
             <label class="oldUserPopupInfo" for="name">Please Enter Your Username:</label>
 
@@ -36,13 +36,14 @@
             <button class="oldUserPopupClose" onclick="theFunctionOldClose()">x</button>
         </form>
 
-        <form>
+        <form><!--popup with information about game-->
             <p class="mainPopup" id="thePopupAbout">
-    
                 <span class="aboutPopupInfo">
-                    Mathalassa is a fun and educational math game that offers students from varying ages and grades to learn and perfect their math skills.
+                    Mathalassa is a fun and educational math game that offers 
+                    students from varying ages and grades math questions to learn and perfect their math skills. 
+                    Students can advance through levels as their chosen avatar and have fun practicing their arithmetic!
                 </span>
-    
+                <img class="lenovo" src="images/lenovo.png">
                 <button class="aboutPopupClose" onclick="theFunctionAboutClose()">x</button>
             </p>
         </form> 

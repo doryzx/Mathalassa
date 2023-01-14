@@ -2,7 +2,7 @@ body {
     font-family:Verdana, sans-serif;
   }
 
-img{
+.background{
   position:absolute;
   top:0%;
   left:0%;
@@ -96,6 +96,14 @@ h4 {
   top: 3%;
   left: 93%;
   font-size: 18px;
+}
+
+.lenovo{
+  position:absolute;
+  transform:translate(-50%,-50%);
+  width:20vh;
+  top:45vh;
+  left:21vw;
 }
 
 .oldUserPopup {

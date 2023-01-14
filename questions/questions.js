@@ -83,28 +83,41 @@ function nextQuestion(){
     answer= generate(level);
 }
 
-
+let bank=
+    ["apples","bananas","oranges","trees","candies",
+    "cookies","legos","clarinets","scoopulas","chocolates",
+    "chickens","Kellens","phones","bowls","plants"];
 function generate(level){//this sets the question text, hint text, and returns the answer
-    var answer =7;
-    tries=2;
+    var answer;
+    var question;
+    var hint;
+    var a;
+    var b;
     switch(level){
         case 1: 
-            return answer;
+            break;
         case 2: 
-            return answer;
+            break;
         case 3: 
-            return answer;
+           break; 
         case 4: 
-            return answer;
+           break; 
         case 5: 
-            return answer;
+            break;
         case 6: 
-            return answer;
+            break;
         case 7: 
-            return answer;
+            break;
         case 8: 
-            return answer;
+            break;
         case 9: 
-            return answer;
+            break;
     }
+    document.getElementById("question").innerHTML=question;
+    document.getElementById("hint").innerHTML=hint;
+    return answer;
+}
+
+function generate(min, max){
+   return(Math.floor(Math.random() * (max - min + 1) + min));
 }

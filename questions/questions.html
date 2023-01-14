@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="questions.css"> <!--reference to CSS document-->
 </head>
 <body>
-    <div id="cover">
-        
+    <div id="cover"><!--for blurring-->
+
     <h1 class="levelTitle" id="levelTitle"></h1>
     <div class="questionBox">
         <p class="question" id="question">
@@ -19,13 +19,13 @@
     </div>
 
     <p class="questionInputDisclaimer">Please input an interger ONLY (if confused, ask a adult near you)</p>
-    <p class="message" id="message"></p>
+   
+    <p class="message" id="message"></p><!--correct/incorrect message-->
 
-    <input class="questionInput" id="questionInput" type="number">
+    <input class="questionInput" id="questionInput" type="number"><!--input for the answer-->
     <button class="answerSubmit" onclick="setResponse()">Submit</button>
-
     
-    <div class="fishText">
+    <div class="fishText"><!--fish speech and lives-->
         <p class="fishTextAct" id="fishTextAct">You've got this! This is easy-peasy</p>
     </div>
     <img class="textBubble" src="../images/speechBubble.png">
@@ -37,16 +37,11 @@
     <button class="questionPageClose" onclick="questionPageCloseFunction()">x</button>
 
     <button class="nextQuestion" id="nextQuestion" onclick="nextQuestion()">Next</button>
-
-    </div>
-
+        </div><!--for blurring-->
     <form class="closeConfirmPopup" id="closeConfirm">
         <p>Return to Map. Are you sure? You will loose your progress for this level</p>
-
         <button class="confirmPageCancel" onclick="confirmPageCancelFunction()">x</button>
-
         <a href="../map/map.html"><button class="confirmReturnToMap" type="button">Return to Map</button></a>
-
     </form>
 
     <form class="levelFailed" id="levelFailed">
