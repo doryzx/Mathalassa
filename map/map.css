@@ -97,7 +97,6 @@ button{
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -111,7 +110,7 @@ button{
     font-size: 30px;
 }
 
-.levelPreviewGeneral{
+.levelGeneral{
     color: rgb(0, 0, 0);
     position: absolute;
     width:80%;
@@ -125,20 +124,32 @@ button{
     position:relative;
     opacity:1;
     left:70vh;
-    top:50vh;
+    top:45vh;
     left:70vh;
+}
+.levelDescriptionTitle{
+
+}
+.levelDescription{
+
+}
+.imageOne{
+
+}
+.imageTwo{
+    
 }
 
 .levelPreviewClose{
     position:relative;
-    bottom:25vh;
+    bottom:28vh;
     left:65vh;
     color: rgb(0, 0, 0);
     background-color: #ff0000;
     font-size: 18px;
     opacity:1;
-    width:7vh;
-    height:7vh;
+    width:6vh;
+    height:6vh;
 }
 
 .blur{

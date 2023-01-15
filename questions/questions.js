@@ -116,7 +116,6 @@ function generate(level){//this sets the question text, hint text, and returns t
     switch(level){
         case 1: 
             a=generateNum(2,5);
-            console.log(a);
             b=generateNum(2,5);
             answer=a+b;
             question=("You have "+a+" "+thing+", and your friend "+name
@@ -125,7 +124,6 @@ function generate(level){//this sets the question text, hint text, and returns t
             break;
         case 2: 
             a=generateNum(5,20);
-            console.log(a);
             b=generateNum(6,20);
             answer=a+b;
             question=("You have "+a+" "+thing+", and your friend "+name
@@ -134,7 +132,6 @@ function generate(level){//this sets the question text, hint text, and returns t
             break;
         case 3: 
             a=generateNum(3,9);
-            console.log(a);
             b=generateNum(2,a);
             answer=a-b;
             question=("You had "+a+" "+thing+", and your friend "+name
@@ -143,7 +140,6 @@ function generate(level){//this sets the question text, hint text, and returns t
            break; 
         case 4:
             a=generateNum(3,19);
-            console.log(a);
             b=generateNum(2,a);
             answer=a-b;
             question=("You had "+a+" "+thing+", and your friend "+name
@@ -151,22 +147,96 @@ function generate(level){//this sets the question text, hint text, and returns t
             hint="Hint: Try "+a+" - "+b+", don't forget to borrow when needed"; 
            break; 
         case 5: 
-            a=generateNum(3,19);
-            console.log(a);
-            b=generateNum(2,a);
-            answer=a-b;
+            a=generateNum(2,10);
+            b=generateNum(1,10);
+            answer=a*b;
             question=("You had "+a+" "+thing+", and your friend "+name
-            +" takes away "+b+" "+thing+". How many do you have in total now?");
-            hint="Hint: Try "+a+" - "+b+", don't forget to borrow when needed"; 
+            +" has "+b+" times how much you have. How many "+thing+" do they have?");
+            hint="Hint: Try "+a+" x "+b; 
             break;
         case 6: 
+            a=generateNum(2,10);
+            answer=generateNum(1,10);
+            b=a*answer;
+            question=("You have "+b+" "+thing+", and your friend "+name
+            +" seperates them into "+a+" groups. How many "+thing+" are in each group?");
+            hint="Hint: Try "+a+"/"+b;
             break;
         case 7: 
-            break;
+            var c=generateNum(1,2);
+            if(c==1){
+                a=generateNum(2,10);
+                answer=generateNum(1,10);
+                b=a*answer;
+                question=("You have "+b+" "+thing+", and your friend "+name
+                +" seperates them into "+a+" groups. How many "+thing+" are in each group?");
+                hint="Hint: Try "+a+"/"+b;
+                break;
+            }
+            else{
+                a=generateNum(2,10);
+                b=generateNum(1,10);
+                answer=a*b;
+                question=("You had "+a+" "+thing+", and your friend "+name
+                +" has "+b+" times how much you have. How many "+thing+" do they have?");
+                hint="Hint: Try "+a+" x "+b; 
+                break;
+            }
         case 8: 
+            a=generateNum(2,10);
+            b=generateNum(1,4);
+            answer=a^b;
+            question=("If "+name+" clones themselves "+a+" times for "+b
+            +" days, how many will you have after "+b+" days?");
+            hint="Hint: Try "+a+"^"+b; 
             break;
         case 9: 
-            break;
+            var c=generateNum(1,5);
+            if(c==1){
+                a=generateNum(2,10);
+                answer=generateNum(1,10);
+                b=a*answer;
+                question=("You have "+b+" "+thing+", and your friend "+name
+                +" seperates them into "+a+" groups. How many "+thing+" are in each group?");
+                hint="Hint: Try "+a+"/"+b;
+                break;
+            }
+            else if(c==2){
+                a=generateNum(2,10);
+                b=generateNum(1,10);
+                answer=a*b;
+                question=("You had "+a+" "+thing+", and your friend "+name
+                +" has "+b+" times how much you have. How many "+thing+" do they have?");
+                hint="Hint: Try "+a+" x "+b; 
+                break;
+            }
+            else if(c==3){
+                a=generateNum(3,19);
+                b=generateNum(2,a);
+                answer=a-b;
+                question=("You had "+a+" "+thing+", and your friend "+name
+                +" takes away "+b+" "+thing+". How many do you have in total now?");
+                hint="Hint: Try "+a+" - "+b+", don't forget to borrow when needed"; 
+               break;
+            }
+            else if(c==4){
+                a=generateNum(5,20);
+                b=generateNum(6,20);
+                answer=a+b;
+                question=("You have "+a+" "+thing+", and your friend "+name
+                +" gives you "+b+" "+thing+". How many do you have in total?");
+                hint="Hint: Try "+a+" + "+b+", don't forget to carry when needed";
+                break;
+            }
+            else{
+                a=generateNum(2,10);
+                b=generateNum(1,4);
+                answer=a^b;
+                question=("If "+name+" clones themselves "+a+" times for "+b
+                +" days, how many will you have after "+b+" days?");
+                hint="Hint: Try "+a+"^"+b; 
+                break;
+            }
     }
     document.getElementById("question").innerHTML=question;
     document.getElementById("hint").innerHTML=hint;

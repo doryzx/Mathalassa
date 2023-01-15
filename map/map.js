@@ -1,6 +1,31 @@
+let previews=[
+    ["Simple Addition","Numbers combined or added together is called addition, giving you the SUM. An addition of numbers is represented through \"+\"",
+    "../images/levelOneOne.png","../images/levelOneTwo.png"],
+    ["Addition","Numbers in a digit column that add up past ten can have the tens digit carried to the tens column",
+    "../images/levelTwoOne.png","../images/levelTwoTwo.png"],
+    ["Simple Subtraction","A number taken away from another is called subtraction, giving you the DIFFERENCE. Subtraction of numbers is represented through \"-\"",
+    "../images/levelThreeOne.png","../images/levelThreeTwo.png"],
+    ["Subtraction","If subtracting a bigger digit from a smaller one, you can borrow 1 from the next column",
+    "../images/levelFourOne.png","../images/levelFourTwo.png"],
+    ["Multiplication","Numbers added repeatedly is called multiplication, giving you the PRODUCT. Multiplication is represented through \"x\"",
+    "../images/levelFiveOne.png","../images/levelFiveTwo.png"],
+    ["Division","Splitting numbers in groups is called division, giving you the QUOTIENT. Division can be represented through \"/\"",
+    "../images/levelSixOne.png","../images/levelSixTwo.png"],
+    ["Multiplication/Division","Division is the opposite of Multiplication, don't mix them up!",
+    "../images/levelSevenOne.png","../images/levelSevenTwo.png"],
+    ["Exponents","Repeated multiplication can be written as EXPONENTS. Exponents can be represented through \"^\"",
+    "../images/levelEightOne.png","../images/levelEightTwo.png"],
+    ["All Operations","It is important to be able to do all operations and be able to use the right one at the right time!",
+    "../images/levelNineOne.png","../images/levelNineTwo.png"]
+];
 
-function levelPreviewOpen(){//what happens when the preview is opened
-    document.getElementById("levelPreviewTitle").innerHTML="Level "+getLevelCurrent();
+function levelPreviewOpen(){//what happens when the preview is opened, set's it based on level
+    document.getElementById("levelPreviewTitle").innerHTML="LEVEL "+getLevelCurrent();
+    document.getElementById("levelGeneral").innerHTML=previews[getLevelCurrent()-1][0];
+    document.getElementById("levelDescriptionTitle").innerHTML="How To Do "+previews[getLevelCurrent()-1][0];
+    document.getElementById("levelDescription").innerHTML=previews[getLevelCurrent()-1][1];
+    document.getElementById("imageOne").src=previews[getLevelCurrent()-1][2];
+    document.getElementById("imageTwo").src=previews[getLevelCurrent()-1][3];
     document.getElementById("levelPreview").style.visibility="visible";
     document.getElementById("cover").classList.toggle("blur");
 }
@@ -8,9 +33,6 @@ function levelPreviewClose(){//what happens when the preview is closed
     document.getElementById("levelPreview").style.visibility="hidden";
     document.getElementById("cover").classList.toggle("blur");
 }
-// switch(getNode()){
-//     case 0
-// }
 
 //set image to the chosen character
 document.getElementById("character").src=getCharacter();
