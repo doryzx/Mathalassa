@@ -21,7 +21,7 @@
 
 // res.sendFile(__dirname + '/index.html');});
 //code for actual html file
-var audio = new Audio('music/musicTest.mp3');//music
+var audio = new Audio('music/indexMusic.mp3');//music from https://youtu.be/RcYU8zxxmaY
 audio.play();
 audio.addEventListener('ended', function() {
     this.currentTime = 0;

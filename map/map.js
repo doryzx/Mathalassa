@@ -1,4 +1,4 @@
-var audio = new Audio('../music/musicTest.mp3');//music
+var audio = new Audio('../music/mapMusic.mp3');//music from https://youtu.be/QA9edyBYONQ
 audio.play();
 audio.addEventListener('ended', function() {
     this.currentTime = 0;
