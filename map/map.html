@@ -14,16 +14,16 @@
     
     <div class="constant"> <!--code for placing fish and buttons-->
         <div class="container"> <!--for centering the element inside-->
-            <button  class="buttonStart">Start</button>
-            <button  class="buttonOne">1</button>
-            <button  class="buttonTwo">2</button>
-            <button  class="buttonThree">3</button>
-            <button  class="buttonFour">4</button>
-            <button  class="buttonFive">5</button>
-            <button  class="buttonSix">6</button>
-            <button  class="buttonSeven">7</button>
-            <button  class="buttonEight">8</button>
-            <button  class="buttonEnd">End</button>
+            <button  class="node buttonStart">Start</button>
+            <button  class="node buttonOne">1</button>
+            <button  class="node buttonTwo">2</button>
+            <button  class="node buttonThree">3</button>
+            <button  class="node buttonFour">4</button>
+            <button  class="node buttonFive">5</button>
+            <button  class="node buttonSix">6</button>
+            <button  class="node buttonSeven">7</button>
+            <button  class="node buttonEight">8</button>
+            <button  class="node buttonEnd">End</button>
             <img class="character" id="character"> <!--user character-->
             
         </div>
@@ -39,15 +39,14 @@
         <p class="levelDescription" id="levelDescription"></p> <!--These will be subjective to each individual level-->
         <img class="imageOne" id="imageOne"><!--tips images-->
         <img class="imageTwo" id="imageTwo">
-        <p>You have to answer 5 questions. You have three lives. GOOD LUCK!</p> <!--This will stay the same throughout all levels-->
+        <p class="levelRule">You have to answer 5 questions. You have three lives. GOOD LUCK!</p> <!--This will stay the same throughout all levels-->
 
         <a href="../questions/questions.html"><button class="levelContinue" type="button">Let's Go!</button></a>
-        <button class="levelPreviewClose" onclick="theFunctionCloseLevelOne()">x</button>
+        <button class="levelPreviewClose" onclick="theFunctionCloseLevel()">x</button>
     </form>
 
     <form class="help" id="help"> <!--popup contents-->
-      <p class="helpText">Use your arrow keys to move on the map from level to level.
-         You cannot move past a level until you have completed it. Press enter to start the level.</p>
+      <p class="helpText">Use your arrow keys to move on the map from level to level. You cannot move past a level until you have completed. Click the level or press enter to start.</p>
       <button class="helpClose" onclick="close()">x</button>
     </form>
 

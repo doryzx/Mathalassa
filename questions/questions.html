@@ -37,24 +37,32 @@
     <button class="nextQuestion" id="nextQuestion" onclick="nextQuestion()">Next</button>
         </div><!--for blurring-->
     <form class="closeConfirmPopup" id="closeConfirm">
-        <p>Return to Map. Are you sure? You will loose your progress for this level</p>
+        <p>Return to Map. Are you sure? You will lose your progress for this level</p>
         <button class="confirmPageCancel" onclick="confirmPageCancelFunction()">x</button>
         <a href="../map/map.html"><button class="confirmReturnToMap" type="button">Return to Map</button></a>
     </form>
 
     <form class="levelFailed" id="levelFailed">
         <p class="failed">You failed</p> 
-        <p class="failedLevelNumber">Level One</p> <!-- Subjective to each level -->
+        <p class="levelNumber" id="levelNumber1"></p> <!-- Subjective to each level -->
         <p class="failedInfo">You lost all of your lives. Return to map to try again</p>
         <a href="../map/map.html"><button class="returnToMaps" type="button">Return to Map</button></a>
-        <img class="character" id="character">
+        <img class="character" id="fish2">
+        <div class="fishText"><!--fish speech and lives-->
+            <p class="fishTextAct1">Oh no! What if the shark catches up? Let's go back to the path and try again!</p>
+        </div>
+        <img class="textBubble" src="../images/speechBubble.png">
     </form>
 
     <form class="levelPassed" id="levelPassed">
         <p class="passed">You passed</p>
-        <p class="passedLevelNumber">Level One</p> <!--Subjective to each level-->
+        <p class="levelNumber" id="levelNumber2"></p> <!--Subjective to each level-->
         <a href="../map/map.html"><button class="returnToMaps" type="button">Return to Map</button></a>
-        <img class="character" id="character">
+        <img class="character" id="fish1">
+        <div class="fishText"><!--fish speech and lives-->
+            <p class="fishTextAct1">Yay! We can move on to the next level now! Good job!</p>
+        </div>
+        <img class="textBubble" src="../images/speechBubble.png"> 
     </form>
 
     <script src="../user.js"></script>

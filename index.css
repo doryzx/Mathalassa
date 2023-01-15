@@ -11,29 +11,34 @@ body {
 }
 
 .title{
-width:100vh;
+width:135vh;
 height:auto;
 left:50vw;
-top:30vh;
+top:32vh;
 transform:translate(-50%,-50%);
 }
 
 h2{
   position: absolute;
   left:50%;
-  top:3%;
+  top:10%;
+  color:#e8e8e8;
   transform: translate(-50%, -50%);
 }
 
-h3 {
+h3{
   position:absolute; 
   left:50%;
-  top: 40%;
+  font-size:16px;
+  top: 43%;
+  color:#cfcfcf;
+  opacity:0.8;
   transform: translate(-50%, -50%);
 }
 
 h4 {
-  position:absolute; 
+  position:absolute;
+  opacity:0.6; 
   left:95%;
   top: 93%;
   transform: translate(-50%, -50%);
@@ -41,9 +46,9 @@ h4 {
 
 .mainButton{
   font-family: Verdana, sans-serif;
-  opacity: 0.9;
-  background-color: #a7a7aa;
-  border-color: #a7a7aa;
+  opacity: 0.85;
+  background-color: #c7c7c8;
+  border-color: #d9d9da;
   border-radius: 4px;
   color: rgb(0, 0, 0);
   padding: 22px 32px;
@@ -57,7 +62,7 @@ h4 {
   visibility: hidden;
   width: 80vh;
   height: 50vh;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(236, 237, 238);
   color: rgb(0, 0, 0);
   border-radius: 4px;
   padding: 35px;
@@ -123,7 +128,7 @@ h4 {
   text-align: center;
   top: 18%;
   left: 10%;
-  font-size: 18px;
+  font-size: 22px;
 } 
 
 .form-container{
@@ -135,7 +140,7 @@ input[type=text]{
   color: rgb(0, 0, 0);
   background-color: #ffffff;
   position: absolute;
-  top: 30%;
+  top: 38%;
   left: 20%;
   font-size: 18px;
   width: 225px;
@@ -148,7 +153,7 @@ input[type=text]{
   color: rgb(0, 0, 0);
   background-color: #ffffff;
   position: absolute;
-  top: 30%;
+  top: 38%;
   left: 70%;
   font-size: 18px;
   width: 75px;
@@ -165,7 +170,11 @@ input[type=text]{
 }
 
 .failed{
+  position:absolute;
   visibility: hidden;
+  font:18px;
+  left:18.5vh;
+  top:26%;
 }
 
   

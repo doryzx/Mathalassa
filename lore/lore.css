@@ -12,11 +12,11 @@ img{
 }
 
 button{
-  border-color: grey;
+  border-color: rgb(202, 202, 202);
   position: absolute;
   font-family: Verdana, sans-serif;
-  background-color: grey;
-  border-radius: 4px;
+  background-color: rgb(202, 202, 202);
+  border-radius: 3px;
 }
 
 .scroll{
@@ -30,12 +30,12 @@ button{
 
 .ml11 {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.4em;
     width: 45vw;
     text-align:center;
     position:absolute;
     transform:translate(-50%,-50%);
-    top: 30vh;
+    top: 28vh;
     left: 50%;
   }
   
@@ -58,57 +58,34 @@ button{
   }
 
   .picture{
-    border-radius: 10px;
+    position: absolute;
+    border-radius: 4px;
+    width: 80vh;
+    height: 30vh;
+    transform:translate(-50%,-50%);
+    top: 60vh;
+    left: 50vw;
+    opacity:0.85;
   }
 
   .loreBoat{
     visibility: visible;
-    position: absolute;
-    width: 80vh;
-    height: 30vh;
-    transform:translate(-50%,-50%);
-    top: 60vh;
-    left: 50vw;
   }
 
   .loreNet{
     visibility: hidden;
-    position: absolute;
-    width: 80vh;
-    height: 30vh;
-    transform:translate(-50%,-50%);
-    top: 60vh;
-    left: 50vw;
   }
 
   .loreLost{
     visibility: hidden;
-    position: absolute;
-    width: 80vh;
-    height: 30vh;
-    transform:translate(-50%,-50%);
-    top: 60vh;
-    left: 50vw;
   }
 
   .loreShark{
     visibility: hidden;
-    position: absolute;
-    width: 80vh;
-    height: 30vh;
-    transform:translate(-50%,-50%);
-    top: 60vh;
-    left: 50vw;
   }
 
   .loreEnd{
     visibility: hidden;
-    position: absolute;
-    width: 80vh;
-    height: 30vh;
-    transform:translate(-50%,-50%);
-    top: 60vh;
-    left: 50vw;
   }
 
  .skip{

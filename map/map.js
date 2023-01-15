@@ -24,8 +24,23 @@ function levelPreviewOpen(){//what happens when the preview is opened, set's it 
     document.getElementById("levelGeneral").innerHTML=previews[getLevelCurrent()-1][0];
     document.getElementById("levelDescriptionTitle").innerHTML="How To Do "+previews[getLevelCurrent()-1][0];
     document.getElementById("levelDescription").innerHTML=previews[getLevelCurrent()-1][1];
+    if(getLevelCurrent()==2||getLevelCurrent()==9){
     document.getElementById("imageOne").src=previews[getLevelCurrent()-1][2];
+    document.getElementById("imageOne").style.height="25vh";
+    }
+    else{
+    document.getElementById("imageOne").src=previews[getLevelCurrent()-1][2];
+    document.getElementById("imageOne").style.height="auto";
+    }
+    if(getLevelCurrent()==6){
     document.getElementById("imageTwo").src=previews[getLevelCurrent()-1][3];
+    document.getElementById("imageTwo").style.height="25vh";
+    document.getElementById("imageTwo").style.width="50vh";
+    }
+    else{
+    document.getElementById("imageTwo").src=previews[getLevelCurrent()-1][3];
+    document.getElementById("imageTwo").style.height="auto";
+    }
     document.getElementById("levelPreview").style.visibility="visible";
     document.getElementById("cover").classList.toggle("blur");
 }
@@ -52,9 +67,9 @@ let pathways=[
     [0,0,-1,1,0],
     [1,0,-1,0,5],
     [1,-1,0,0,0],
-    [0,-1,1,0,7],
+    [0,-1,1,0,6],
     [1,0,0,-1,0],
-    [0,-1,0,1,0],
+    [0,-1,0,1,7],
     [0,0,-1,1,0],
     [0,0,-1,1,0],
     [0,1,-1,0,8],
@@ -198,7 +213,5 @@ function move(direction){
 
 function help(){
     document.getElementById("help").style.visibility="visible";
-    document.getElementById("cover").classList.toggle("blur");
-
-
+    document.getElementById("cover").classList.add("blur");
 }

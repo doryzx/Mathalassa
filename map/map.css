@@ -1,5 +1,6 @@
 body{
     background-color: #ab8159e3; /*might not keep 98714de3*/
+    font-family:Verdana, sans-serif;
 }
 .map{
     height:100%;
@@ -9,7 +10,9 @@ body{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-
+button{
+    font-family:Verdana, sans-serif;
+}
 .constant{
     position: relative;
 }
@@ -23,7 +26,7 @@ body{
     justify-content: center; */
 }
 
-button{
+.node{
     position:absolute;
     transform: translate(-50%,-50%);
     width: 7vh;
@@ -105,7 +108,7 @@ button{
     position: absolute;
     width:80%;
     text-align: center;
-    top: 15%;
+    top: 5vh;
     left: 10%;
     font-size: 30px;
 }
@@ -115,41 +118,66 @@ button{
     position: absolute;
     width:80%;
     text-align: center;
-    top: 50%;
+    top: 11vh;
     left: 10%;
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .levelContinue{
     position:relative;
     opacity:1;
     left:70vh;
-    top:45vh;
-    left:70vh;
+    top:74vh;
+    left:58vh;
+    font-size:20px;
+    border-radius: 4px;
+    background-color:aquamarine;
+    border-color: aquamarine;
 }
 .levelDescriptionTitle{
-
+    position:absolute;
+    text-align:center;
+    top:18vh;
+    left:33vw;
+    transform:translate(-50%,-50%);
+    font-size:19px;
 }
 .levelDescription{
-
+    position:absolute;
+    transform:translate(-50%,-50%);
+    width:85vh;
+    left:33vw;
+    top:28vh;
 }
 .imageOne{
-
+    position:absolute;
+    transform:translate(-50%,-50%);
+    width:50vh;
+    top:50vh;
+    left:40vh;
 }
 .imageTwo{
-    
+    position:absolute;
+    transform:translate(-50%,-50%);
+    width:60vh;
+    top:50vh;
+    left:100vh;
 }
-
 .levelPreviewClose{
-    position:relative;
-    bottom:28vh;
-    left:65vh;
+    position:absolute;
+    top:3vh;
+    left:61vw;
     color: rgb(0, 0, 0);
     background-color: #ff0000;
+    border-color:#ff0000;
     font-size: 18px;
-    opacity:1;
-    width:6vh;
-    height:6vh;
+}
+
+.levelRule{
+    position:absolute;
+    text-align:center;
+    left:27vh;
+    top:65vh;
 }
 
 .blur{
@@ -196,11 +224,11 @@ button{
 .helpClose{
     color: black;
     background-color: #ff0000;
+    border-color:#ff0000;
     position: absolute;
     width: 4vh;
-    height: 4vh;
-    top: 14%;
-    left: 92%;
+    top: 2vh;
+    left: 91%;
     font-size: 15px;
 }
 

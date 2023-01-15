@@ -1,29 +1,15 @@
 function questionPageCloseFunction(){
     document.getElementById("closeConfirm").style.visibility="visible";
-    document.getElementById("cover").classList.toggle("blur");
-}
-
-function confirmPageCancelFunction(){
-    document.getElementById("closeConfirm").style.visibility="hidden";
-    document.getElementById("cover").classList.toggle("blur");
+    document.getElementById("cover").classList.add("blur");
 }
 
 document.getElementById("character").src=getCharacter();//set image to the chosen character
 document.getElementById("levelTitle").innerHTML="Level "+getLevelCurrent();
-//can next set to false
-//enter level
-//lives set to three, questions set to 5
-// while lives<3 and question<5
-// generate question according to level  get answer 
-// if asnwer=answer, questions set to 4, html say correct! fish say yay
-// else html say try again fish say omg you better not get me killed
-//     if answer=answer, questions set to 4, html say correct! fish say yay
-//     else lives set to 2, images heart iinvisible, html say incorrect
-//     can next set to true;
-//     repeat
-// if lives=0, failed
-// if questions=0, 
-//if current>passed, set passed=current and then passed
+document.getElementById("levelNumber1").innerHTML="Level "+getLevelCurrent();
+document.getElementById("levelNumber2").innerHTML="Level "+getLevelCurrent();
+document.getElementById("fish1").src=getCharacter();
+document.getElementById("fish2").src=getCharacter();
+
 var lives=3;
 var questions=5;//questions they need to answer correctly
 var response;
@@ -160,7 +146,7 @@ function generate(level){//this sets the question text, hint text, and returns t
             b=a*answer;
             question=("You have "+b+" "+thing+", and your friend "+name
             +" seperates them into "+a+" groups. How many "+thing+" are in each group?");
-            hint="Hint: Try "+a+"/"+b;
+            hint="Hint: Try "+b+"/"+a;
             break;
         case 7: 
             var c=generateNum(1,2);
@@ -170,7 +156,7 @@ function generate(level){//this sets the question text, hint text, and returns t
                 b=a*answer;
                 question=("You have "+b+" "+thing+", and your friend "+name
                 +" seperates them into "+a+" groups. How many "+thing+" are in each group?");
-                hint="Hint: Try "+a+"/"+b;
+                hint="Hint: Try "+b+"/"+a;
                 break;
             }
             else{
@@ -185,7 +171,7 @@ function generate(level){//this sets the question text, hint text, and returns t
         case 8: 
             a=generateNum(2,10);
             b=generateNum(1,4);
-            answer=a^b;
+            answer=a**b;
             question=("If "+name+" clones themselves "+a+" times for "+b
             +" days, how many will you have after "+b+" days?");
             hint="Hint: Try "+a+"^"+b; 
@@ -198,7 +184,7 @@ function generate(level){//this sets the question text, hint text, and returns t
                 b=a*answer;
                 question=("You have "+b+" "+thing+", and your friend "+name
                 +" seperates them into "+a+" groups. How many "+thing+" are in each group?");
-                hint="Hint: Try "+a+"/"+b;
+                hint="Hint: Try "+b+"/"+a;
                 break;
             }
             else if(c==2){
@@ -231,7 +217,7 @@ function generate(level){//this sets the question text, hint text, and returns t
             else{
                 a=generateNum(2,10);
                 b=generateNum(1,4);
-                answer=a^b;
+                answer=a**b;
                 question=("If "+name+" clones themselves "+a+" times for "+b
                 +" days, how many will you have after "+b+" days?");
                 hint="Hint: Try "+a+"^"+b; 

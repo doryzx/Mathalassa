@@ -10,7 +10,7 @@ class user{
         this.name= name;
         this.character= character;
         this.levelCompleted= levelCompleted;
-        this.levelCurrent=1;
+        this.levelCurrent=8;//setting it without database
         this.node=0;
     }
     //methods
@@ -32,7 +32,7 @@ function oldPlayer(name){
 newPlayer("bob", "../images/guppy.png", 8);
 
 function checkPlayer(username){//\will changee
-    return true;
+    return false;
 }
 //get and set functions for external use
 function getNode(){
