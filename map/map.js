@@ -1,4 +1,4 @@
-let previews=[
+let previews=[//fish icons from https://www.flaticon.com/free-icon/fish_3075494
     ["Simple Addition","Numbers combined or added together is called addition, giving you the SUM. An addition of numbers is represented through \"+\"",
     "../images/levelOneOne.png","../images/levelOneTwo.png"],
     ["Addition","Numbers in a digit column that add up past ten can have the tens digit carried to the tens column",
