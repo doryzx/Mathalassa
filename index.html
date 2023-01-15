@@ -21,6 +21,7 @@
    <button class="oldUserPopup mainButton" onclick ="theFunctionOld()">Old User</button>
    <button class="aboutPopup mainButton" onclick ="theFunctionAbout()">About</button>
     </div>
+    
         <!--old user popup-->
         <form class="mainPopup" id="thePopupOld">
             <label class="oldUserPopupInfo" for="name">Please Enter Your Username:</label>
@@ -33,18 +34,19 @@
 
                 <p class="failed" id="failed">invalid username, try again</p>
 
-            <button class="oldUserPopupClose" onclick="theFunctionOldClose()">x</button>
+            <button class="popupClose" onclick="theFunctionOldClose()">x</button>
         </form>
 
-        <form><!--popup with information about game-->
+        <form> <!--popup with information about game-->
             <p class="mainPopup" id="thePopupAbout">
                 <span class="aboutPopupInfo">
                     Mathalassa is a fun and educational math game that offers 
                     students from varying ages and grades math questions to learn and perfect their math skills. 
                     Students can advance through levels as their chosen avatar and have fun practicing their arithmetic!
                 </span>
-                <img class="lenovo" src="images/lenovo.png">
-                <button class="aboutPopupClose" onclick="theFunctionAboutClose()">x</button>
+
+                <img class="lenovo" src="images/lenovo.png"> <!--mascot-->
+                <button class="popupClose" onclick="theFunctionAboutClose()">x</button>
             </p>
         </form> 
 

@@ -38,19 +38,22 @@ h4 {
   top: 93%;
   transform: translate(-50%, -50%);
 }
+
 .mainButton{
-  background-color: #ffffff;
-  border: none;
+  font-family: Verdana, sans-serif;
+  opacity: 0.9;
+  background-color: #a7a7aa;
+  border-color: #a7a7aa;
   border-radius: 4px;
   color: rgb(0, 0, 0);
   padding: 22px 32px;
   text-align: center;
   font-size: 16px;
-  margin: 4px 2px;
   width: 300px;
 }
 
 .mainPopup{
+  position: absolute;
   visibility: hidden;
   width: 80vh;
   height: 50vh;
@@ -58,7 +61,6 @@ h4 {
   color: rgb(0, 0, 0);
   border-radius: 4px;
   padding: 35px;
-  position: absolute;
   top: 75%;
   left: 50%;
   transform: translate(-50%, -75%);
@@ -89,9 +91,10 @@ h4 {
   font-size: 18px;
 }
 
-.aboutPopupClose{
+.popupClose{
   color: rgb(0, 0, 0);
   background-color: #ff0000;
+  border-color: #ff0000;
   position: absolute;
   top: 3%;
   left: 93%;
@@ -122,15 +125,6 @@ h4 {
   left: 10%;
   font-size: 18px;
 } 
-
-.oldUserPopupClose{
-  color: rgb(0, 0, 0);
-  background-color: #ff0000;
-  position: absolute;
-  top: 3%;
-  left: 93%;
-  font-size: 18px;
-}
 
 .form-container{
   background-color: white;

@@ -54,7 +54,6 @@ function theFunctionAbout() {
     else if(checkPlayer(username)==false){
       document.getElementById("failed").style.visibility="visible";
     }
-
   }
 
  
