@@ -84,6 +84,20 @@ button{
     transform: translate( -50%,-50%); /*set the center of the fish*/
 }
 
+.audio{
+    width:5vh;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:95vh;
+    left:94vw;
+}
+.audioOn{
+    visibility:hidden;
+}
+.audioOff{
+    visibility:visible;
+}
+
 .levelPreview{  
     background-color: #ffffff;
     border: none;

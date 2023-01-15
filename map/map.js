@@ -1,3 +1,19 @@
+var audio = new Audio('../music/musicTest.mp3');//music
+audio.play();
+audio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+function audioOff(){
+    audio.pause();
+    document.getElementById("audioOff").style.visibility="hidden";
+    document.getElementById("audioOn").style.visibility="visible";
+}
+function audioOn(){
+    audio.play();
+    document.getElementById("audioOn").style.visibility="hidden";
+    document.getElementById("audioOff").style.visibility="visible";
+}
 let previews=[//fish icons from https://www.flaticon.com/free-icon/fish_3075494
     ["Simple Addition","Numbers combined or added together is called addition, giving you the SUM. An addition of numbers is represented through \"+\"",
     "../images/levelOneOne.png","../images/levelOneTwo.png"],

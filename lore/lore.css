@@ -104,6 +104,21 @@ button{
     left: 65vw;
   }
 
+  .audio{
+    width:5vh;
+    height:auto;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    top:95vh;
+    left:95vw;
+}
+.audioOn{
+    visibility:hidden;
+}
+.audioOff{
+    visibility:visible;
+}
+
 
  
 

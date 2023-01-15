@@ -1,3 +1,19 @@
+var audio = new Audio('../music/musicTest.mp3');//music
+audio.play();
+audio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+function audioOff(){
+    audio.pause();
+    document.getElementById("audioOff").style.visibility="hidden";
+    document.getElementById("audioOn").style.visibility="visible";
+}
+function audioOn(){
+    audio.play();
+    document.getElementById("audioOn").style.visibility="hidden";
+    document.getElementById("audioOff").style.visibility="visible";
+}
 animate()
 var count=0; //number to correspond to each part of text and its image
 

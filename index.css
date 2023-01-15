@@ -44,6 +44,20 @@ h4 {
   transform: translate(-50%, -50%);
 }
 
+.audio{
+  width:5vh;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  top:92vh;
+  left:95vw;
+}
+.audioOn{
+  visibility:hidden;
+}
+.audioOff{
+  visibility:visible;
+}
+
 .mainButton{
   font-family: Verdana, sans-serif;
   opacity: 0.85;
