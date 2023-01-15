@@ -1,5 +1,5 @@
 var fish;
-function setFish1(){
+function setFish1(){ //setting fish characters
   fish="../images/guppy.png";
   selectFishFunctionOpen();
 }
@@ -14,7 +14,6 @@ function setFish3(){
 function selectFishFunctionOpen() {
     document.getElementById("newUsername").style.visibility="visible";
     document.getElementById("cover").classList.toggle("blur");
-
   }
 
   function selectFishFunctionClose(){
