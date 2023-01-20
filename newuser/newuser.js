@@ -4,6 +4,7 @@ audio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
 }, false);
+//audio controls
 function audioOff(){
     audio.pause();
     document.getElementById("audioOff").style.visibility="hidden";
@@ -15,7 +16,7 @@ function audioOn(){
     document.getElementById("audioOff").style.visibility="visible";
 }
 var fish;
-function setFish1(){ //setting fish characters
+function setFish1(){ //setting fish characters from select buttons
   fish="../images/guppy.png";
   selectFishFunctionOpen();
 }
@@ -27,6 +28,7 @@ function setFish3(){
   fish="../images/blueTang.png";
   selectFishFunctionOpen();
 }
+//open close popup
 function selectFishFunctionOpen() {
     document.getElementById("newUsername").style.visibility="visible";
     document.getElementById("cover").classList.toggle("blur");

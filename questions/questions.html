@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="cover"><!--for blurring-->
-
+    <!--question elements-->
     <h1 class="levelTitle" id="levelTitle"></h1>
     <div class="questionBox">
         <p class="question" id="question">
@@ -31,20 +31,20 @@
     <img class="heart life1" id="life1" src="../images/heart.png">
     <img class="heart life2" id="life2" src="../images/heart.png">
     <img class="heart life3" id="life3" src="../images/heart.png">
-
+    <!--close button-->
     <button class="questionPageClose" onclick="questionPageCloseFunction()">x</button>
 
     <button class="nextQuestion" id="nextQuestion" onclick="nextQuestion()">Next</button>
     <img class="audio audioOn" id="audioOn"src="../images/audio.png" onclick="audioOn()">
     <img class="audio audioOff" id="audioOff" src="../images/audioOff.png" onclick="audioOff()">
         </div><!--for blurring-->
-
+    <!--close popup-->
     <form class="closeConfirmPopup" id="closeConfirm">
         <p>Return to Map. Are you sure? You will lose your progress for this level</p>
         <button class="confirmPageCancel" onclick="confirmPageCancelFunction()">x</button>
         <a href="../map/map.html"><button class="confirmReturnToMap" type="button">Return to Map</button></a>
     </form>
-
+    <!--failed and passed popup-->
     <form class="levelFailed" id="levelFailed">
         <p class="failed">You failed</p> 
         <p class="levelNumber" id="levelNumber1"></p> <!-- Subjective to each level -->

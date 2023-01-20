@@ -4,6 +4,7 @@ audio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
 }, false);
+//audio controls
 function audioOff(){
     audio.pause();
     document.getElementById("audioOff").style.visibility="hidden";
@@ -14,18 +15,20 @@ function audioOn(){
     document.getElementById("audioOn").style.visibility="hidden";
     document.getElementById("audioOff").style.visibility="visible";
 }
+//close popup
 function questionPageCloseFunction(){
     document.getElementById("closeConfirm").style.visibility="visible";
     document.getElementById("cover").classList.add("blur");
 }
 
 document.getElementById("character").src=getCharacter();//set image to the chosen character
+//set defaults
 document.getElementById("levelTitle").innerHTML="Level "+getLevelCurrent();
 document.getElementById("levelNumber1").innerHTML="Level "+getLevelCurrent();
 document.getElementById("levelNumber2").innerHTML="Level "+getLevelCurrent();
 document.getElementById("fish1").src=getCharacter();
 document.getElementById("fish2").src=getCharacter();
-
+//variables 
 var lives=3;
 var questions=5;//questions they need to answer correctly
 var response;
@@ -57,14 +60,14 @@ function setResponse(){//checks if the response is correct and shows hints/text 
     }
     else if(response!=answer){
         tries--;
-        if(tries==1){
+        if(tries==1){//first wrong answer
             document.getElementById("hint").style.visibility="visible";
             document.getElementById("message").style.color="red";
             document.getElementById("message").innerHTML="Incorrect. Try Again";
             document.getElementById("message").style.visibility="visible";
             document.getElementById("fishTextAct").innerHTML="Oh no! Be Careful!"
         }
-        else if(tries==0){
+        else if(tries==0){//second wrong answer
             lives--;
             finished=true;
             document.getElementById("message").innerHTML="Incorrect. You lost a life";
@@ -97,7 +100,7 @@ function checkEnd(){//checks if they've failed or passed
         }
     }
 }
-function nextQuestion(){
+function nextQuestion(){//brings up new question
     checkEnd();
     finished=false;
     document.getElementById("nextQuestion").style.visibility="hidden";
@@ -192,7 +195,7 @@ function generate(level){//this sets the question text, hint text, and returns t
             +" days, how many will you have after "+b+" days?");
             hint="Hint: Try "+a+"^"+b; 
             break;
-        case 9: 
+        case 9: //a mix of all
             var c=generateNum(1,5);
             if(c==1){
                 a=generateNum(2,10);
@@ -244,6 +247,6 @@ function generate(level){//this sets the question text, hint text, and returns t
     document.getElementById("hint").innerHTML=hint;
 }
 
-function generateNum(min, max){
+function generateNum(min, max){//number generator
    return(Math.floor(Math.random() * (max - min + 1) + min));
 }

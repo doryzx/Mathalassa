@@ -4,6 +4,7 @@ audio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
 }, false);
+//audio play/pause
 function audioOff(){
     audio.pause();
     document.getElementById("audioOff").style.visibility="hidden";
@@ -14,7 +15,7 @@ function audioOn(){
     document.getElementById("audioOn").style.visibility="hidden";
     document.getElementById("audioOff").style.visibility="visible";
 }
-let previews=[//fish icons from https://www.flaticon.com/free-icon/fish_3075494
+let previews=[//fish icons from https://www.flaticon.com/free-icon/fish_3075494, array of text for level preview
     ["Simple Addition","Numbers combined or added together is called addition, giving you the SUM. An addition of numbers is represented through \"+\"",
     "../images/levelOneOne.png","../images/levelOneTwo.png"],
     ["Addition","Numbers in a digit column that add up past ten can have the tens digit carried to the tens column",
@@ -40,7 +41,7 @@ function levelPreviewOpen(){//what happens when the preview is opened, set's it 
     document.getElementById("levelGeneral").innerHTML=previews[getLevelCurrent()-1][0];
     document.getElementById("levelDescriptionTitle").innerHTML="How To Do "+previews[getLevelCurrent()-1][0];
     document.getElementById("levelDescription").innerHTML=previews[getLevelCurrent()-1][1];
-    if(getLevelCurrent()==2||getLevelCurrent()==9){
+    if(getLevelCurrent()==2||getLevelCurrent()==9){//some slight extra styling
     document.getElementById("imageOne").src=previews[getLevelCurrent()-1][2];
     document.getElementById("imageOne").style.height="25vh";
     }
@@ -93,7 +94,7 @@ let pathways=[
     [-1,0,0,0,9]
 ];
 
-document.addEventListener("keyup", function(event) {
+document.addEventListener("keyup", function(event) {//event listener to move map elements
     if (event.code === "ArrowRight") {
         if(checkNode("right")){
             move("right");
@@ -117,12 +118,11 @@ document.addEventListener("keyup", function(event) {
     if (event.code ==="Enter"){
         if(checkNode("enter")){
             levelPreviewOpen();
-            // window.open('../../questions/questions.html','_self'); 
          }
     }
 });
 
-function checkNode(command){
+function checkNode(command){//checks if movement is valid
     var a;
     if(command=="up"){
         a = pathways[getNode()][0];
@@ -201,10 +201,12 @@ function checkLevel(node){//to check if they can advance to a further node
             break;    
         case 8://if they pass all 8 levels, they can go anywehre
             return true;
+        case 9:
+            return true;
     }
     return false;
 }
-function move(direction){
+function move(direction){//function to move the fish by one block length
     const xLength = Math.round((window.innerHeight*0.23/0.999425 +Number.EPSILON)*1000)/1000;
     const yLength = Math.round((window.innerHeight*0.235/0.999425 + Number.EPSILON)*1000)/1000;
     const character = document.querySelector('.character');
@@ -226,7 +228,7 @@ function move(direction){
             break;
     } 
 }
-
+//help popup open
 function help(){
     document.getElementById("help").style.visibility="visible";
     document.getElementById("cover").classList.add("blur");

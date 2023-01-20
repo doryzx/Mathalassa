@@ -4,6 +4,7 @@ audio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
 }, false);
+//audio play/pause
 function audioOff(){
     audio.pause();
     document.getElementById("audioOff").style.visibility="hidden";
@@ -14,10 +15,11 @@ function audioOn(){
     document.getElementById("audioOn").style.visibility="hidden";
     document.getElementById("audioOff").style.visibility="visible";
 }
-animate()
+
+animate()//call text animation
 var count=0; //number to correspond to each part of text and its image
 
-function animate(){
+function animate(){//text animation function
   //source code of animation from https://tobiasahlin.com/moving-letters/#11
 var textWrapper = document.querySelector('.ml11 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/[-A-Za-z0-9!$%^&*@()_+|~=`{}\[\]:";'<>?,.\/]/g, "<span class='letter'>$&</span>"); //animation of all characters 
@@ -47,7 +49,7 @@ anime.timeline({loop: false})
 }
 count++; //go to next part
 
-function next(){//change text and image for eachs tory part
+function next(){//change text and image for each atory part
   if(count==1){
     document.getElementById("letters").innerHTML="What could this mean? SPLASH! OH NO! They throw a net in the water and begin catching fish! "; //specific text per part
     document.getElementById("loreBoat").style.visibility="hidden"; //changing image

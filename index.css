@@ -43,7 +43,7 @@ h4 {
   top: 93%;
   transform: translate(-50%, -50%);
 }
-
+/*audio controls*/
 .audio{
   width:5vh;
   position:absolute;
@@ -57,7 +57,7 @@ h4 {
 .audioOff{
   visibility:visible;
 }
-
+/*general button nd popup css*/
 .mainButton{
   font-family: Verdana, sans-serif;
   opacity: 0.85;

@@ -27,6 +27,7 @@ audio.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
 }, false);
+//audio controls
 function audioOff(){
     audio.pause();
     document.getElementById("audioOff").style.visibility="hidden";

@@ -14,6 +14,7 @@ body{
 button{
     font-family:Verdana, sans-serif;
 }
+/*page setup*/
 .questionBox{
     background-color: aliceblue;
     border: none;
@@ -141,7 +142,7 @@ button{
     left: 90%;
     transform: translate(-50%, -75%);
 }
-
+/*return popup*/
 .questionPageClose{
     color: rgb(0, 0, 0);
     background-color: #ff0000;
@@ -186,7 +187,7 @@ button{
     transform: translate(-50%, -75%);
     font-size: 20px;
 }
-
+/*audio controls*/
 .audio{
     width:5vh;
     position:absolute;
@@ -209,7 +210,7 @@ button{
   width:100%;
   height:100%;
 }
-
+/*failed and passed popups*/
 .levelFailed{
     visibility: hidden;
     width: 100%;
