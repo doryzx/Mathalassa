@@ -19,8 +19,8 @@
         <!--new user button-->
    <a href="newuser/newuser.html"><button class="newuser mainButton" type="button">New User</button></a>
     <!--other buttons-->
-   <button class="oldUserPopup mainButton" onclick ="theFunctionOld()">Old User</button>
-   <button class="aboutPopup mainButton" onclick ="theFunctionAbout()">About</button>
+   <button class="oldUserPopup mainButton" onclick ="oldUser()">Old User</button>
+   <button class="aboutPopup mainButton" onclick ="about()">About</button>
     <!--audio controls-->
     <img class="audio audioOn" id="audioOn"src="../images/audio.png" onclick="audioOn()"><!--music controls-->
     <img class="audio audioOff" id="audioOff" src="../images/audioOff.png" onclick="audioOff()">
@@ -38,7 +38,7 @@
 
                 <p class="failed" id="failed">Invalid username, try again</p>
 
-            <button class="popupClose" onclick="theFunctionOldClose()">x</button>
+            <button class="popupClose" onclick="oldUserClose()">x</button>
         </form>
 
         <form> <!--popup with information about game-->
@@ -50,7 +50,7 @@
                 </span>
 
                 <img class="lenovo" src="images/lenovo.png"> <!--mascot-->
-                <button class="popupClose" onclick="theFunctionAboutClose()">x</button>
+                <button class="popupClose" onclick="aboutClose()">x</button>
             </p>
         </form> 
 

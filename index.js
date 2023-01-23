@@ -38,24 +38,24 @@ function audioOn(){
     document.getElementById("audioOn").style.visibility="hidden";
     document.getElementById("audioOff").style.visibility="visible";
 }
-function theFunctionAbout() {
+function about() {
     document.getElementById("thePopupAbout").style.visibility="visible";
     document.getElementById("cover").classList.toggle("blur");
     
   }
 
-  function theFunctionAboutClose(){
+  function aboutClose(){
     document.getElementById("thePopupAbout").style.visibility="hidden";
     document.getElementById("cover").classList.toggle("blur");
   }
 
-  function theFunctionOld() {
+  function oldUser() {
     document.getElementById("thePopupOld").style.visibility="visible";
     document.getElementById("cover").classList.toggle("blur");
 
   }
 
-  function theFunctionOldClose(){
+  function oldUserClose(){
     document.getElementById("thePopupOld").style.visibility="hidden";
     document.getElementById("cover").classList.toggle("blur");
   }
