@@ -195,7 +195,7 @@ function generate(level){//this sets the question text, hint text, and returns t
             +" days, how many will you have after "+b+" days?");
             hint="Hint: Try "+a+"^"+b; 
             break;
-        case 9: //a mix of all
+        case 9: //a mix of all, did not use recursion or recall, because the host seems to have problems with that
             var c=generateNum(1,5);
             if(c==1){
                 a=generateNum(2,10);

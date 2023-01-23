@@ -18,23 +18,23 @@ function audioOn(){
 var fish;
 function setFish1(){ //setting fish characters from select buttons
   fish="../images/guppy.png";
-  selectFishFunctionOpen();
+  selectOpen();
 }
 function setFish2(){
   fish="../images/discus.png";
-  selectFishFunctionOpen();
+  selectOpen();
 }
 function setFish3(){
   fish="../images/blueTang.png";
-  selectFishFunctionOpen();
+  selectOpen();
 }
 //open close popup
-function selectFishFunctionOpen() {
+function selectOpen() {
     document.getElementById("newUsername").style.visibility="visible";
     document.getElementById("cover").classList.toggle("blur");
   }
 
-  function selectFishFunctionClose(){
+  function selectClose(){
     document.getElementById("newUsername").style.visibility="hidden";
     document.getElementById("cover").classList.toggle("blur");
   }
